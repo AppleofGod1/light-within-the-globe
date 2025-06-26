@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Light Within the Globe - Home</title>
 
     <!-- SEO Meta Tags -->
@@ -31,15 +30,12 @@
 
 <!-- Navigation -->
 <nav>
-
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <ul>
-       
-
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li>
@@ -49,6 +45,16 @@
                 <li><a href="clothing/clothing-men.html">Men</a></li>
                 <li><a href="clothing/clothing-women.html">Women</a></li>
                 <li><a href="clothing/clothing-kids.html">Kids</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="transportation/transportation.html">Transportation ▼</a>
+            <ul>
+                <li><a href="transportation/transportation-about.html">About</a></li>
+                <li><a href="transportation/transportation-services.html">Services</a></li>
+                <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
+                <li><a href="transportation/transportation-faq.html">FAQ</a></li>
+                <li><a href="transportation/transportation-contact.html">Contact</a></li>
             </ul>
         </li>
         <li>
@@ -76,11 +82,7 @@
 <!-- Hero Section -->
 <section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff;">
     <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Welcome to Light Within the Globe</h2>
-    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Fashion. Wellness. Giving Back.</p>
-    <div class="cta">
-        <a href="clothing/clothing.html" class="button">Explore Our Clothing Shop</a>
-        <a href="about.html" class="button">Learn About Us</a>
-    </div>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Fashion. Transportation. Wellness. Giving Back.</p>
 </section>
 
 <!-- Fashion Section -->
@@ -92,6 +94,18 @@
         <h2>Discover Our Fashion Collection</h2>
         <p>Elegant designs for men, women, and children — blending comfort, quality, and beauty.</p>
         <a href="clothing/clothing.html" class="button">Shop Now</a>
+    </div>
+</section>
+
+<!-- Transportation Section -->
+<section class="section" style="display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: center; gap: 2rem;">
+    <div style="flex: 1; min-width: 300px;">
+        <h2>Transportation You Can Trust</h2>
+        <p>Reliable, safe, and efficient transport services for every need.</p>
+        <a href="transportation/transportation.html" class="button">Explore Services</a>
+    </div>
+    <div style="flex: 1; min-width: 300px;">
+        <img src="images/transport.jpg" alt="Transportation Image" style="width: 100%; border-radius: 8px;">
     </div>
 </section>
 
@@ -127,7 +141,6 @@
     <br><br>
     <a href="https://wa.me/YourNumber" target="_blank" class="button">Chat on WhatsApp</a>
 </section>
-
 
 <script>
     function toggleMenu() {
