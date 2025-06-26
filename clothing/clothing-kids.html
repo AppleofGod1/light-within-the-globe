@@ -178,9 +178,11 @@
 
   <script>
   function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("active");
   }
 </script>
+
 
   <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
