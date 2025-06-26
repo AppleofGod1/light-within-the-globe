@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Welcome to Light Within the Globe - Contact Us</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact Light Within the Globe — we would love to hear from you! Reach out to learn more about our fashion, wellness, and foundation initiatives." />
+    <meta name="keywords" content="Light Within the Globe contact, contact us, get in touch, global brand, fashion, wellness, community, foundation" />
+    <meta name="author" content="Light Within the Globe" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Welcome to Light Within the Globe - Contact Us" />
+    <meta property="og:description" content="Reach out to Light Within the Globe — learn more about our mission, products, and global community." />
+    <meta property="og:image" content="images/contact-main.jpg" />
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Welcome to Light Within the Globe - Contact Us" />
+    <meta name="twitter:description" content="Reach out to Light Within the Globe — learn more about our mission, products, and global community." />
+    <meta name="twitter:image" content="images/contact-main.jpg" />
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<header>
+    <h1>Light Within the Globe</h1>
+    <p>Creating Impact, Globally</p>
+</header>
+
+<nav>
+
+ <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <li>
+            <a href="clothing/clothing.html">Clothing ▼</a>
+            <ul>
+                <li><a href="clothing/clothing-essentials.html">Essentials</a></li>
+                <li><a href="clothing/clothing-men.html">Men</a></li>
+                <li><a href="clothing/clothing-women.html">Women</a></li>
+                <li><a href="clothing/clothing-kids.html">Kids</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="wellness/wellness.html">Wellness ▼</a>
+            <ul>
+                <li><a href="wellness/wellness-about.html">About</a></li>
+                <li><a href="wellness/wellness-opportunity.html">Opportunity</a></li>
+                <li><a href="wellness/wellness-testimonials.html">Testimonials</a></li>
+                <li><a href="wellness/wellness-blog.html">Blog</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="foundation/foundation.html">Foundation ▼</a>
+            <ul>
+                <li><a href="foundation/foundation-about.html">About</a></li>
+                <li><a href="foundation/foundation-projects.html">Projects</a></li>
+                <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
+                <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Contact Us</h2>
+    <p>
+        We would love to hear from you! Reach out with any questions, ideas, or partnership opportunities — together we can light the globe.
+    </p>
+</section>
+
+<section class="section">
+    <img src="images/contact-main.jpg" alt="Contact Light Within the Globe" />
+
+    <h3>Reach Us:</h3>
+    <p><strong>📍 Address:</strong> Your Business Address Here</p>
+    <p><strong>📞 Phone:</strong> +YourPhoneNumber</p>
+    <p><strong>📧 Email:</strong> your@email.com</p>
+
+    <h3>Quick Contact Form:</h3>
+    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+        <label>
+            Your Name:<br />
+            <input type="text" name="name" style="width: 100%; padding: 0.5rem;" required />
+        </label>
+        
+        <label>
+            Your Email:<br />
+            <input type="email" name="email" style="width: 100%; padding: 0.5rem;" required />
+        </label>
+        
+        <label>
+            Your Message:<br />
+            <textarea name="message" rows="5" style="width: 100%; padding: 0.5rem;" required></textarea>
+        </label>
+        
+        <button type="submit" class="button">Send Message</button>
+    </form>
+
+    <h3 style="margin-top: 2rem;">Or Contact Us Directly on WhatsApp:</h3>
+    <p>
+        <a href="https://wa.me/YourWhatsAppNumber" target="_blank" class="button" style="background: #25D366; color: white;">
+            Message Us on WhatsApp
+        </a>
+    </p>
+</section>
+
+
+<script>
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('active');
+    }
+</script>
+
+<footer>
+    <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+    <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
+</body>
+</html>
