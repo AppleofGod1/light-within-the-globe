@@ -1,261 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light Within the Globe - Kids Collection</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Within the Globe - Kids Collection</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Shop kids fashion — shoes, slippers, dresses, t-shirts, and accessories." />
-    <meta name="keywords" content="kids fashion, shoes, slippers, dresses, t-shirts, accessories, Light Within the Globe" />
-    <meta name="author" content="Light Within the Globe" />
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Shop kids fashion — shoes, slippers, dresses, t-shirts, and accessories." />
+  <meta name="keywords" content="kids fashion, shoes, slippers, dresses, t-shirts, accessories, Light Within the Globe" />
+  <meta name="author" content="Light Within the Globe" />
 
-    <!-- OG Meta Tags -->
-    <meta property="og:title" content="Kids Collection - Light Within the Globe" />
-    <meta property="og:description" content="Discover our kids fashion — shoes, dresses, and more." />
-    <meta property="og:image" content="../images/kids-collection.jpg" />
-    <meta property="og:url" content="#" />
-    <meta property="og:type" content="website" />
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Kids Collection - Light Within the Globe" />
+  <meta property="og:description" content="Discover our kids fashion — shoes, dresses, and more." />
+  <meta property="og:image" content="../images/kids-collection.jpg" />
+  <meta property="og:url" content="#" />
+  <meta property="og:type" content="website" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-
-<header>
+  <header>
     <h1>Light Within the Globe</h1>
     <p>Creating Impact, Globally</p>
-</header>
+  </header>
 
-<!-- Navigation -->
-<nav>
-
-
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
-
-
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About Us</a></li>
-        <li>
-            <a href="../clothing/clothing.html">Clothing ▼</a>
-            <ul>
-                <li><a href="../clothing/clothing-essentials.html">Essentials</a></li>
-                <li><a href="../clothing/clothing-men.html">Men</a></li>
-                <li><a href="../clothing/clothing-women.html">Women</a></li>
-                <li><a href="../clothing/clothing-kids.html">Kids</a></li>
-            </ul>
-        </li>
-
-
-<li>
-    <a href="../transportation/transportation.html">Transportation ▼</a>
-    <ul>
-        <li><a href="../transportation/transportation-about.html">About</a></li>
-        <li><a href="../transportation/transportation-services.html">Services</a></li>
-        <li><a href="../transportation/transportation-pricing.html">Pricing</a></li>
-        <li><a href="../transportation/transportation-faq.html">FAQ</a></li>
-        <li><a href="../transportation/transportation-contact.html">Contact</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li>
+        <a href="../clothing/clothing.html">Clothing ▼</a>
+        <ul>
+          <li><a href="../clothing/clothing-essentials.html">Essentials</a></li>
+          <li><a href="../clothing/clothing-men.html">Men</a></li>
+          <li><a href="../clothing/clothing-women.html">Women</a></li>
+          <li><a href="../clothing/clothing-kids.html">Kids</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../transportation/transportation.html">Transportation ▼</a>
+        <ul>
+          <li><a href="../transportation/transportation-about.html">About</a></li>
+          <li><a href="../transportation/transportation-services.html">Services</a></li>
+          <li><a href="../transportation/transportation-pricing.html">Pricing</a></li>
+          <li><a href="../transportation/transportation-faq.html">FAQ</a></li>
+          <li><a href="../transportation/transportation-contact.html">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../foundation/foundation.html">Foundation ▼</a>
+        <ul>
+          <li><a href="../foundation/foundation-about.html">About</a></li>
+          <li><a href="../foundation/foundation-projects.html">Projects</a></li>
+          <li><a href="../foundation/foundation-involved.html">Get Involved</a></li>
+          <li><a href="../foundation/foundation-gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="../contact.html">Contact</a></li>
     </ul>
-</li>
+  </nav>
 
-
-
-        <li>
-            <a href="../foundation/foundation.html">Foundation ▼</a>
-            <ul>
-                <li><a href="../foundation/foundation-about.html">About</a></li>
-                <li><a href="../foundation/foundation-projects.html">Projects</a></li>
-                <li><a href="../foundation/foundation-involved.html">Get Involved</a></li>
-                <li><a href="../foundation/foundation-gallery.html">Gallery</a></li>
-            </ul>
-        </li>
-        <li><a href="../contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
+  <!-- Hero Section with Banner and Logo -->
+  <section class="hero" style="background: url('../images/kids-banner.jpg') center center/cover; padding: 6rem 1rem; color: #fff; text-align: center;">
+    <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
     <h2>Kids Collection</h2>
     <p>Shop beautiful shoes, dresses, t-shirts, and more for kids.</p>
-</section>
+  </section>
 
-<!-- Category Menu -->
-<section class="section" style="text-align: center; margin-bottom: 2rem;">
-    <a href="#shoes" class="button" style="margin: 0.5rem;">Shoes</a>
-    <a href="#slippers" class="button" style="margin: 0.5rem;">Slippers</a>
-    <a href="#dresses" class="button" style="margin: 0.5rem;">Dresses</a>
-    <a href="#tshirts" class="button" style="margin: 0.5rem;">T-Shirts</a>
-    <a href="#accessories" class="button" style="margin: 0.5rem;">Accessories</a>
-</section>
+  <!-- Category Menu -->
+  <section class="section" style="text-align: center; margin-bottom: 2rem;">
+    <a href="#shoes" class="button">Shoes</a>
+    <a href="#slippers" class="button">Slippers</a>
+    <a href="#dresses" class="button">Dresses</a>
+    <a href="#tshirts" class="button">T-Shirts</a>
+    <a href="#accessories" class="button">Accessories</a>
+  </section>
 
-
-
-<!-- Shoes Section -->
-<section class="section">
-    <h2 id="shoes" style="text-align: center; margin-bottom: 1rem;">Shoes</h2>
-
-    <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    ">
-        <!-- Product 1 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids1.jpg" alt="Kids Sneakers" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Kids Sneakers</h3>
-                <p><strong>Price:</strong> $40</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Kids Sneakers" target="_blank" class="button">Order Now</a>
-            </div>
+  <!-- Kids Shoes -->
+  <section class="section">
+    <h2 id="shoes" style="text-align: center;">Shoes</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="../images/product-kids1.jpg" alt="Kids Sneakers">
+        <div>
+          <h3>Kids Sneakers</h3>
+          <p><strong>Price:</strong> $40</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Kids Sneakers" class="button" target="_blank">Order Now</a>
         </div>
-
-        <!-- Product 2 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids2.jpg" alt="School Shoes" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>School Shoes</h3>
-                <p><strong>Price:</strong> $35</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order School Shoes" target="_blank" class="button">Order Now</a>
-            </div>
+      </div>
+      <div class="product-card">
+        <img src="../images/product-kids2.jpg" alt="School Shoes">
+        <div>
+          <h3>School Shoes</h3>
+          <p><strong>Price:</strong> $35</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order School Shoes" class="button" target="_blank">Order Now</a>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-
-
-<!-- Slippers Section -->
-<section class="section">
-    <h2 id="slippers" style="text-align: center; margin-bottom: 1rem;">Slippers</h2>
-
-    <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    ">
-        <!-- Product 1 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids3.jpg" alt="Kids Slippers" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Kids Slippers</h3>
-                <p><strong>Price:</strong> $20</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Kids Slippers" target="_blank" class="button">Order Now</a>
-            </div>
+  <!-- Kids Slippers -->
+  <section class="section">
+    <h2 id="slippers" style="text-align: center;">Slippers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="../images/product-kids3.jpg" alt="Kids Slippers">
+        <div>
+          <h3>Kids Slippers</h3>
+          <p><strong>Price:</strong> $20</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Kids Slippers" class="button" target="_blank">Order Now</a>
         </div>
-
-        <!-- Product 2 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids4.jpg" alt="Colorful Slides" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Colorful Slides</h3>
-                <p><strong>Price:</strong> $25</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Colorful Slides" target="_blank" class="button">Order Now</a>
-            </div>
+      </div>
+      <div class="product-card">
+        <img src="../images/product-kids4.jpg" alt="Colorful Slides">
+        <div>
+          <h3>Colorful Slides</h3>
+          <p><strong>Price:</strong> $25</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Colorful Slides" class="button" target="_blank">Order Now</a>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-
-<!-- Dresses Section -->
-<section class="section">
-    <h2 id="dresses" style="text-align: center; margin-bottom: 1rem;">Dresses</h2>
-
-    <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    ">
-        <!-- Product 1 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids5.jpg" alt="Party Dress" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Party Dress</h3>
-                <p><strong>Price:</strong> $50</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Party Dress" target="_blank" class="button">Order Now</a>
-            </div>
+  <!-- Kids Dresses -->
+  <section class="section">
+    <h2 id="dresses" style="text-align: center;">Dresses</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="../images/product-kids5.jpg" alt="Party Dress">
+        <div>
+          <h3>Party Dress</h3>
+          <p><strong>Price:</strong> $50</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Party Dress" class="button" target="_blank">Order Now</a>
         </div>
-
-        <!-- Product 2 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids6.jpg" alt="Summer Dress" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Summer Dress</h3>
-                <p><strong>Price:</strong> $45</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Summer Dress" target="_blank" class="button">Order Now</a>
-            </div>
+      </div>
+      <div class="product-card">
+        <img src="../images/product-kids6.jpg" alt="Summer Dress">
+        <div>
+          <h3>Summer Dress</h3>
+          <p><strong>Price:</strong> $45</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Summer Dress" class="button" target="_blank">Order Now</a>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-
-<!-- Accessories Section -->
-<section class="section">
-    <h2 id="accessories" style="text-align: center; margin-bottom: 1rem;">Accessories</h2>
-
-    <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        padding: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    ">
-        <!-- Product 1 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids9.jpg" alt="Kids Hat" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Kids Hat</h3>
-                <p><strong>Price:</strong> $20</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Kids Hat" target="_blank" class="button">Order Now</a>
-            </div>
+  <!-- Kids Accessories -->
+  <section class="section">
+    <h2 id="accessories" style="text-align: center;">Accessories</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="../images/product-kids9.jpg" alt="Kids Hat">
+        <div>
+          <h3>Kids Hat</h3>
+          <p><strong>Price:</strong> $20</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Kids Hat" class="button" target="_blank">Order Now</a>
         </div>
-
-        <!-- Product 2 -->
-        <div style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-            <img src="../images/product-kids10.jpg" alt="Toy Backpack" style="width: 100%; height: 300px; object-fit: cover;">
-            <div style="padding: 1rem;">
-                <h3>Toy Backpack</h3>
-                <p><strong>Price:</strong> $35</p>
-                <a href="https://wa.me/YourNumber?text=I would like to order Toy Backpack" target="_blank" class="button">Order Now</a>
-            </div>
+      </div>
+      <div class="product-card">
+        <img src="../images/product-kids10.jpg" alt="Toy Backpack">
+        <div>
+          <h3>Toy Backpack</h3>
+          <p><strong>Price:</strong> $35</p>
+          <a href="https://wa.me/YourNumber?text=I would like to order Toy Backpack" class="button" target="_blank">Order Now</a>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-<script>
+  <script>
     function toggleMenu() {
-        document.querySelector('nav').classList.toggle('active');
+      document.querySelector('nav').classList.toggle('active');
     }
-</script>
+  </script>
 
-
-<!-- Footer -->
-<footer>
+  <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
     <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
     <p>Follow us: Facebook | Instagram | YouTube</p>
-</footer>
-
+  </footer>
 </body>
 </html>
-

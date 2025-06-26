@@ -1,153 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8" />
-    <title>Light Within the Globe - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Within the Globe - Home</title>
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Light Within the Globe — a global brand inspiring change through Fashion, Wellness, and Giving Back." />
-    <meta name="keywords" content="fashion, wellness, foundation, Light Within the Globe, global impact, charity, clothing" />
-    <meta name="author" content="Light Within the Globe" />
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Light Within the Globe — a global brand inspiring change through Fashion, Transportation, and Foundation work that supports less privileged children." />
+  <meta name="keywords" content="fashion, transportation, charity, Light Within the Globe, global impact, foundation, support children" />
+  <meta name="author" content="Light Within the Globe" />
 
-    <!-- OG Meta Tags -->
-    <meta property="og:title" content="Light Within the Globe" />
-    <meta property="og:description" content="Fashion. Wellness. Giving Back. Creating Impact, Globally." />
-    <meta property="og:image" content="images/home-banner.jpg" />
-    <meta property="og:url" content="#" />
-    <meta property="og:type" content="website" />
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Light Within the Globe" />
+  <meta property="og:description" content="Fashion. Transportation. Giving Back. Supporting less privileged children." />
+  <meta property="og:image" content="images/home-banner.jpg" />
+  <meta property="og:url" content="#" />
+  <meta property="og:type" content="website" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-<header>
+<header style="display: flex; align-items: center; gap: 1rem;">
+  <img src="images/logo.png" alt="Light Within the Globe Logo" style="height: 60px;" />
+  <div>
     <h1>Light Within the Globe</h1>
     <p>Creating Impact, Globally</p>
+  </div>
 </header>
 
-<!-- Navigation -->
 <nav>
-    <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li>
-            <a href="clothing/clothing.html">Clothing ▼</a>
-            <ul>
-                <li><a href="clothing/clothing-essentials.html">Essentials</a></li>
-                <li><a href="clothing/clothing-men.html">Men</a></li>
-                <li><a href="clothing/clothing-women.html">Women</a></li>
-                <li><a href="clothing/clothing-kids.html">Kids</a></li>
-            </ul>
-        </li>
-
-        <!-- Replaced Wellness with Transportation -->
-        <li>
-            <a href="transportation/transportation.html">Transportation ▼</a>
-            <ul>
-                <li><a href="transportation/transportation-about.html">About</a></li>
-                <li><a href="transportation/transportation-services.html">Services</a></li>
-                <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
-                <li><a href="transportation/transportation-faq.html">FAQ</a></li>
-                <li><a href="transportation/transportation-contact.html">Contact</a></li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="foundation/foundation.html">Foundation ▼</a>
-            <ul>
-                <li><a href="foundation/foundation-about.html">About</a></li>
-                <li><a href="foundation/foundation-projects.html">Projects</a></li>
-                <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
-                <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
-            </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li>
+      <a href="clothing/clothing.html">Clothing ▼</a>
+      <ul>
+        <li><a href="clothing/clothing-essentials.html">Essentials</a></li>
+        <li><a href="clothing/clothing-men.html">Men</a></li>
+        <li><a href="clothing/clothing-women.html">Women</a></li>
+        <li><a href="clothing/clothing-kids.html">Kids</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="transportation/transportation.html">Transportation ▼</a>
+      <ul>
+        <li><a href="transportation/transportation-about.html">About</a></li>
+        <li><a href="transportation/transportation-services.html">Services</a></li>
+        <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
+        <li><a href="transportation/transportation-faq.html">FAQ</a></li>
+        <li><a href="transportation/transportation-contact.html">Contact</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="foundation/foundation.html">Foundation ▼</a>
+      <ul>
+        <li><a href="foundation/foundation-about.html">About</a></li>
+        <li><a href="foundation/foundation-projects.html">Projects</a></li>
+        <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
+        <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
 
-
-<!-- Hero Section -->
 <section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff;">
-    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Welcome to Light Within the Globe</h2>
-    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Fashion. Transportation. Wellness. Giving Back.</p>
+  <div style="text-align: center;">
+    <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
+    <h2 style="font-size: 2.2rem;">Welcome to Light Within the Globe</h2>
+    <p style="font-size: 1.1rem;">Fashion. Transportation. Foundation. Supporting children in need, globally.</p>
+  </div>
 </section>
 
 <!-- Fashion Section -->
 <section class="section" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
-    <div style="flex: 1; min-width: 300px;">
-        <img src="images/her.jpg" alt="Fashion Collection Image" style="width: 100%; border-radius: 8px;">
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-        <h2>Discover Our Fashion Collection</h2>
-        <p>Elegant designs for men, women, and children — blending comfort, quality, and beauty.</p>
-        <a href="clothing/clothing.html" class="button">Shop Now</a>
-    </div>
+  <div style="flex: 1; min-width: 300px;">
+    <img src="images/her.jpg" alt="Fashion Collection Image" style="width: 100%; border-radius: 8px;">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h2>Discover Our Fashion Collection</h2>
+    <p>Elegant designs for men, women, and children — blending comfort, quality, and beauty.</p>
+    <a href="clothing/clothing.html" class="button">Shop Now</a>
+  </div>
 </section>
 
 <!-- Transportation Section -->
 <section class="section" style="display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: center; gap: 2rem;">
-    <div style="flex: 1; min-width: 300px;">
-        <h2>Transportation You Can Trust</h2>
-        <p>Reliable, safe, and efficient transport services for every need.</p>
-        <a href="transportation/transportation.html" class="button">Explore Services</a>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-        <img src="images/transport.jpg" alt="Transportation Image" style="width: 100%; border-radius: 8px;">
-    </div>
-</section>
-
-<!-- Wellness Section -->
-<section class="section" style="display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: center; gap: 2rem;">
-    <div style="flex: 1; min-width: 300px;">
-        <h2>Wellness That Empowers</h2>
-        <p>Bringing world-class wellness products to your doorstep.</p>
-        <a href="wellness/wellness.html" class="button">Learn More</a>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-        <img src="images/3.jpg" alt="Wellness Image" style="width: 100%; border-radius: 8px;">
-    </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h2>Transportation You Can Trust</h2>
+    <p>Reliable, safe, and affordable transport services for every journey — built for your comfort and convenience.</p>
+    <a href="transportation/transportation.html" class="button">Explore Services</a>
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <img src="images/transport.jpg" alt="Transportation Image" style="width: 100%; border-radius: 8px;">
+  </div>
 </section>
 
 <!-- Foundation Section -->
 <section class="section" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
-    <div style="flex: 1; min-width: 300px;">
-        <img src="images/her.jpg" alt="Foundation Image" style="width: 100%; border-radius: 8px;">
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-        <h2>Giving Back Through Our Foundation</h2>
-        <p>Supporting education, healthcare, and hope for children and families around the world.</p>
-        <a href="foundation/foundation.html" class="button">Support Our Work</a>
-    </div>
+  <div style="flex: 1; min-width: 300px;">
+    <img src="images/her.jpg" alt="Foundation Image" style="width: 100%; border-radius: 8px;">
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <h2>Giving Back Through Our Foundation</h2>
+    <p>We support children whose parents cannot meet their basic needs. Through education, nutrition, and care, we bring hope and opportunity to the next generation.</p>
+    <a href="foundation/foundation.html" class="button">Support Our Work</a>
+  </div>
 </section>
 
 <!-- Contact Section -->
 <section class="section">
-    <h2>Contact Us</h2>
-    <p>Have questions? Want to collaborate?</p>
-    <a href="contact.html" class="button">Contact Us</a>
-    <br><br>
-    <a href="https://wa.me/YourNumber" target="_blank" class="button">Chat on WhatsApp</a>
+  <h2>Contact Us</h2>
+  <p>Have questions? Want to collaborate or support our cause?</p>
+  <a href="contact.html" class="button">Contact Us</a>
+  <br><br>
+  <a href="https://wa.me/YourNumber" target="_blank" class="button">Chat on WhatsApp</a>
 </section>
 
 <script>
-    function toggleMenu() {
-        document.querySelector('nav').classList.toggle('active');
-    }
+  function toggleMenu() {
+    document.querySelector('nav').classList.toggle('active');
+  }
 </script>
 
-<!-- Footer -->
 <footer>
-    <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-    <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-    <p>Follow us: Facebook | Instagram | YouTube</p>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+  <p>Follow us: Facebook | Instagram | YouTube</p>
 </footer>
 
 </body>

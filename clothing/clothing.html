@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -31,20 +30,20 @@
 
 <body>
 
-<header>
-    <h1>Light Within the Globe</h1>
-    <p>Creating Impact, Globally</p>
+<header style="display: flex; align-items: center; gap: 1rem;">
+    <img src="../images/logo.png" alt="Light Within the Globe Logo" style="height: 60px;" />
+    <div>
+        <h1>Light Within the Globe</h1>
+        <p>Creating Impact, Globally</p>
+    </div>
 </header>
 
 <nav>
-
-
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <ul>
         <li><a href="../index.html">Home</a></li>
@@ -60,18 +59,16 @@
             </ul>
         </li>
 
-
-<li>
-    <a href="../transportation/transportation.html">Transportation ▼</a>
-    <ul>
-        <li><a href="../transportation/transportation-about.html">About</a></li>
-        <li><a href="../transportation/transportation-services.html">Services</a></li>
-        <li><a href="../transportation/transportation-pricing.html">Pricing</a></li>
-        <li><a href="../transportation/transportation-faq.html">FAQ</a></li>
-        <li><a href="../transportation/transportation-contact.html">Contact</a></li>
-    </ul>
-</li>
-
+        <li>
+            <a href="../transportation/transportation.html">Transportation ▼</a>
+            <ul>
+                <li><a href="../transportation/transportation-about.html">About</a></li>
+                <li><a href="../transportation/transportation-services.html">Services</a></li>
+                <li><a href="../transportation/transportation-pricing.html">Pricing</a></li>
+                <li><a href="../transportation/transportation-faq.html">FAQ</a></li>
+                <li><a href="../transportation/transportation-contact.html">Contact</a></li>
+            </ul>
+        </li>
 
         <li>
             <a href="../foundation/foundation.html">Foundation ▼</a>
@@ -87,15 +84,18 @@
     </ul>
 </nav>
 
-<section class="hero">
-    <h2>Our Clothing Collection</h2>
-    <p>
-        Fashion with purpose — explore our Essentials, Men, Women, and Kids collections designed to inspire style and confidence worldwide.
-    </p>
+<!-- Hero Section with Banner and Logo -->
+<section class="hero" style="background: url('../images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff;">
+    <div style="text-align: center;">
+        <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
+        <h2 style="font-size: 2.5rem;">Our Clothing Collection</h2>
+        <p style="font-size: 1.2rem;">Fashion with purpose — Essentials, Men, Women & Kids Collections</p>
+    </div>
 </section>
 
+<!-- Clothing Options Section -->
 <section class="section" style="text-align: center;">
-    <img src="../images/clothing-main.jpg" alt="Light Within the Globe Clothing" />
+    <img src="../images/clothing-main.jpg" alt="Light Within the Globe Clothing" style="max-width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
 
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
         <a href="../clothing/clothing-essentials.html" class="button">Essentials</a>
@@ -105,13 +105,11 @@
     </div>
 </section>
 
-
 <script>
     function toggleMenu() {
         document.querySelector('nav').classList.toggle('active');
     }
 </script>
-
 
 <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
