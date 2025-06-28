@@ -25,29 +25,66 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header style="display: flex; align-items: center; gap: 1rem;">
-  <img src="images/logo.png" alt="Light Within the Globe Logo" style="height: 60px;" />
-  <div>
-    <h1>Light Within the Globe</h1>
-    <p>Creating Impact, Globally</p>
-  </div>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
-
     <li>
       <a href="clothing/clothing.html">Clothing ▼</a>
       <ul>
@@ -57,7 +94,6 @@
         <li><a href="clothing/clothing-kids.html">Kids</a></li>
       </ul>
     </li>
-
     <li>
       <a href="transportation/transportation.html">Transportation ▼</a>
       <ul>
@@ -68,7 +104,6 @@
         <li><a href="transportation/transportation-contact.html">Contact</a></li>
       </ul>
     </li>
-
     <li>
       <a href="foundation/foundation.html">Foundation ▼</a>
       <ul>
@@ -78,25 +113,22 @@
         <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
       </ul>
     </li>
-
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff;">
-    <div style="text-align: center;">
-        <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-        <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Contact Us</h2>
-        <p style="font-size: 1.2rem;">We’d Love to Hear from You — Let’s Light the Globe Together</p>
-    </div>
+<section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff; text-align: center;">
+  <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
+  <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Contact Us</h2>
+  <p style="font-size: 1.2rem;">We’d Love to Hear from You — Let’s Light the Globe Together</p>
 </section>
 
+<!-- Contact Content -->
+<section class="section" style="padding: 2rem; max-width: 900px; margin: auto;">
+  <img src="images/contact-main.jpg" alt="Contact Light Within the Globe" style="width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
 
-<section class="section" style="padding: 2rem;">
-  <img src="images/contact-main.jpg" alt="Contact Light Within the Globe" style="width: 100%; max-width: 800px; border-radius: 8px; display: block; margin: 0 auto;" />
-
-  <h3 style="margin-top: 2rem;">Reach Us:</h3>
+  <h3>Reach Us:</h3>
   <p><strong>📍 Address:</strong> Your Business Address Here</p>
   <p><strong>📞 Phone:</strong> +YourPhoneNumber</p>
   <p><strong>📧 Email:</strong> your@email.com</p>
@@ -129,18 +161,18 @@
   </p>
 </section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
   }
 </script>
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-</footer>
 
 </body>
 </html>

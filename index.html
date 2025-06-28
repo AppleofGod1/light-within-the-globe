@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Light Within the Globe - Home</title>
 
   <!-- SEO Meta Tags -->
@@ -10,7 +11,7 @@
   <meta name="keywords" content="fashion, transportation, charity, Light Within the Globe, global impact, foundation, support children" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- OG Meta Tags -->
+  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Light Within the Globe" />
   <meta property="og:description" content="Fashion. Transportation. Giving Back. Supporting less privileged children." />
   <meta property="og:image" content="images/home-banner.jpg" />
@@ -19,24 +20,63 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header style="display: flex; align-items: center; gap: 1rem;">
-  <img src="images/logo.png" alt="Light Within the Globe Logo" style="height: 60px;" />
-  <div>
-    <h1>Light Within the Globe</h1>
-    <p>Creating Impact, Globally</p>
-  </div>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
@@ -72,18 +112,17 @@
   </ul>
 </nav>
 
-<section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff;">
-  <div style="text-align: center;">
-    <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-    <h2 style="font-size: 2.2rem;">Welcome to Light Within the Globe</h2>
-    <p style="font-size: 1.1rem;">Fashion. Transportation. Foundation. Supporting children in need, globally.</p>
-  </div>
+<!-- Hero Section -->
+<section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff; text-align: center;">
+  <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
+  <h2 style="font-size: 2.2rem;">Welcome to Light Within the Globe</h2>
+  <p style="font-size: 1.1rem;">Fashion. Transportation. Foundation. Supporting children in need, globally.</p>
 </section>
 
 <!-- Fashion Section -->
 <section class="section" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
   <div style="flex: 1; min-width: 300px;">
-    <img src="images/her.jpg" alt="Fashion Collection Image" style="width: 100%; border-radius: 8px;">
+    <img src="images/her.jpg" alt="Fashion Collection" style="width: 100%; border-radius: 8px;" />
   </div>
   <div style="flex: 1; min-width: 300px;">
     <h2>Discover Our Fashion Collection</h2>
@@ -100,14 +139,14 @@
     <a href="transportation/transportation.html" class="button">Explore Services</a>
   </div>
   <div style="flex: 1; min-width: 300px;">
-    <img src="images/transport.jpg" alt="Transportation Image" style="width: 100%; border-radius: 8px;">
+    <img src="images/transport.jpg" alt="Transportation" style="width: 100%; border-radius: 8px;" />
   </div>
 </section>
 
 <!-- Foundation Section -->
 <section class="section" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
   <div style="flex: 1; min-width: 300px;">
-    <img src="images/her.jpg" alt="Foundation Image" style="width: 100%; border-radius: 8px;">
+    <img src="images/her.jpg" alt="Foundation Work" style="width: 100%; border-radius: 8px;" />
   </div>
   <div style="flex: 1; min-width: 300px;">
     <h2>Giving Back Through Our Foundation</h2>
@@ -121,9 +160,16 @@
   <h2>Contact Us</h2>
   <p>Have questions? Want to collaborate or support our cause?</p>
   <a href="contact.html" class="button">Contact Us</a>
-  <br><br>
+  <br /><br />
   <a href="https://wa.me/YourNumber" target="_blank" class="button">Chat on WhatsApp</a>
 </section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+  <p>Follow us: Facebook | Instagram | YouTube</p>
+</footer>
 
 <script>
   function toggleMenu() {
@@ -131,13 +177,6 @@
     nav.classList.toggle("active");
   }
 </script>
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-  <p>Follow us: Facebook | Instagram | YouTube</p>
-</footer>
 
 </body>
 </html>

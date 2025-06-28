@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Light Within the Globe - Get Involved</title>
+  <title>Get Involved | Light Within the Globe</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Join Light Within the Globe Foundation — discover how you can get involved and make a difference through donations, volunteering, or partnerships." />
@@ -18,30 +17,71 @@
   <meta property="og:url" content="#" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Light Within the Globe - Get Involved" />
   <meta name="twitter:description" content="Learn how you can get involved with Light Within the Globe Foundation and help create positive change around the world." />
   <meta name="twitter:image" content="../images/foundation-involved.jpg" />
 
-  <!-- Link to CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Light Within the Globe</h1>
-  <p>Creating Impact, Globally</p>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -77,15 +117,16 @@
   </ul>
 </nav>
 
-<!-- Hero Banner with Background Image and Logo -->
-<section class="hero" style="background: url('../images/foundation-involved.jpg') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
+<!-- Hero Banner -->
+<section class="hero" style="background: url('../images/foundation-about.jpg') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
   <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-  <h2>Get Involved</h2>
-  <p>
+  <h2 style="font-size: 2.5rem;">Get Involved</h2>
+  <p style="font-size: 1.2rem;">
     Become part of the Light Within the Globe Foundation — your support can help transform lives around the world.
   </p>
 </section>
 
+<!-- Involvement Section -->
 <section class="section" style="text-align: center;">
   <p>
     Whether as a donor, volunteer, or partner — there are many ways you can contribute to our mission:
@@ -107,18 +148,19 @@
   </p>
 </section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
+<!-- Toggle Menu Script -->
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
   }
 </script>
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-</footer>
 
 </body>
 </html>

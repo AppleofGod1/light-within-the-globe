@@ -3,43 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Light Within the Globe - Transportation Pricing</title>
+  <title>Light Within the Globe - Transportation Services</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="View our affordable and transparent transportation pricing. Light Within the Globe offers reliable services tailored to your needs and budget." />
-  <meta name="keywords" content="Transportation pricing, Light Within the Globe, transport rates, affordable travel, delivery charges, transport cost" />
+  <meta name="description" content="Discover the range of transportation services offered by Light Within the Globe — reliable, safe, and community-driven mobility solutions." />
+  <meta name="keywords" content="Transportation services, Light Within the Globe, logistics, travel, mobility, delivery, transport solutions" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Light Within the Globe - Transportation Pricing" />
-  <meta property="og:description" content="Discover our affordable transportation pricing for delivery, travel, and logistics services." />
-  <meta property="og:image" content="../images/transportation-pricing.jpg" />
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Light Within the Globe - Transportation Services" />
+  <meta property="og:description" content="Explore our trusted and efficient transportation services that help communities move forward." />
+  <meta property="og:image" content="../images/transportation-services.jpg" />
   <meta property="og:url" content="#" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Meta Tags -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Light Within the Globe - Transportation Pricing" />
-  <meta name="twitter:description" content="Discover our affordable transportation pricing for delivery, travel, and logistics services." />
-  <meta name="twitter:image" content="../images/transportation-pricing.jpg" />
+  <meta name="twitter:title" content="Light Within the Globe - Transportation Services" />
+  <meta name="twitter:description" content="Explore our trusted and efficient transportation services that help communities move forward." />
+  <meta name="twitter:image" content="../images/transportation-services.jpg" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Light Within the Globe</h1>
-  <p>Creating Impact, Globally</p>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -75,50 +118,48 @@
   </ul>
 </nav>
 
-<!-- Hero Banner with Logo -->
+<!-- Hero Banner -->
 <section class="hero" style="background: url('../images/home-banner.png') center center/cover no-repeat; padding: 6rem 1rem; color: #fff;">
   <div style="text-align: center;">
     <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-    <h2>Transportation Pricing</h2>
-    <p>Discover our fair and transparent pricing for various transportation and logistics services — built to suit your needs and budget.</p>
+    <h2>Our Transportation Services</h2>
+    <p>From delivery and shuttle services to business logistics, our mobility offerings are built to serve communities with excellence and reliability.</p>
   </div>
 </section>
 
-<!-- Pricing Content -->
+<!-- Services Section -->
 <section class="section" style="text-align: center;">
-  <img src="../images/transportation-pricing.jpg" alt="Transportation Pricing" style="max-width: 100%; border-radius: 8px; margin-top: 2rem;" />
+  <img src="../images/transportation-services.jpg" alt="Transportation Services" style="max-width: 100%; border-radius: 8px; margin-top: 2rem;" />
 
-  <div style="max-width: 700px; margin: 0 auto; text-align: left; padding-top: 2rem; line-height: 1.8;">
-    <h3>Basic City Transport</h3>
-    <p>₦500 – ₦1,500 depending on distance and time of day</p>
+  <p style="margin-top: 1rem;">
+    We are committed to providing safe, efficient, and affordable transportation solutions that support families, businesses, and everyday movement.
+  </p>
 
-    <h3>School Pick-Up & Drop-Off</h3>
-    <p>₦15,000/month per child (includes weekday round trips)</p>
-
-    <h3>Event or Group Charter</h3>
-    <p>₦25,000 – ₦60,000 depending on distance, duration, and group size</p>
-
-    <h3>Delivery Services</h3>
-    <p>₦800 – ₦3,000 within city limits; nationwide rates vary</p>
-  </div>
+  <ul style="max-width: 700px; margin: 2rem auto; text-align: left; line-height: 1.8;">
+    <li>Community shuttle and school runs</li>
+    <li>Corporate and event transportation</li>
+    <li>Delivery and courier logistics</li>
+    <li>Emergency response mobility support</li>
+  </ul>
 
   <p style="margin-top: 2rem;">
     <a href="../transportation/transportation.html" class="button">Back to Transportation</a>
   </p>
 </section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
+<!-- Script -->
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
   }
 </script>
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-</footer>
 
 </body>
 </html>

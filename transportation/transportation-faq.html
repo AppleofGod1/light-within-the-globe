@@ -23,22 +23,66 @@
   <meta name="twitter:description" content="Answers to common questions about booking and using our transport services." />
   <meta name="twitter:image" content="../images/transport.jpg" />
 
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Light Within the Globe</h1>
-  <p>Creating Impact, Globally</p>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -74,7 +118,7 @@
   </ul>
 </nav>
 
-<!-- Hero Banner with Logo -->
+<!-- Hero Banner -->
 <section class="hero" style="background: url('../images/home-banner.png') center center/cover no-repeat; padding: 6rem 1rem; color: #fff;">
   <div style="text-align: center;">
     <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
@@ -83,45 +127,46 @@
   </div>
 </section>
 
-<!-- FAQ Content -->
+<!-- FAQ Section -->
 <section class="section" style="max-width: 800px; margin: auto; line-height: 1.8;">
   <h3>Frequently Asked Questions</h3>
 
   <p><strong>Q: What types of transportation services do you offer?</strong><br>
-  A: We provide safe and reliable transport for individuals, families, businesses, and events.</p>
+    A: We provide safe and reliable transport for individuals, families, businesses, and events.</p>
 
   <p><strong>Q: How do I make a booking?</strong><br>
-  A: You can contact us directly via phone, WhatsApp, or our booking form on the website.</p>
+    A: You can contact us directly via phone, WhatsApp, or our booking form on the website.</p>
 
   <p><strong>Q: Are your drivers licensed and experienced?</strong><br>
-  A: Yes. All our drivers are certified and trained to ensure a safe and smooth journey.</p>
+    A: Yes. All our drivers are certified and trained to ensure a safe and smooth journey.</p>
 
   <p><strong>Q: What areas do you cover?</strong><br>
-  A: We operate locally and regionally, depending on the transport need. Contact us for specific routes.</p>
+    A: We operate locally and regionally, depending on the transport need. Contact us for specific routes.</p>
 
   <p><strong>Q: How much does it cost?</strong><br>
-  A: Visit our <a href="transportation-pricing.html">Pricing</a> page to learn more about our transparent and affordable rates.</p>
+    A: Visit our <a href="transportation-pricing.html">Pricing</a> page to learn more about our transparent and affordable rates.</p>
 
   <p><strong>Q: Do you offer group or event transport?</strong><br>
-  A: Yes. We accommodate both individual and group transportation needs.</p>
+    A: Yes. We accommodate both individual and group transportation needs.</p>
 
   <p style="margin-top: 2rem;">
     <a href="transportation.html" class="button">Back to Transportation</a>
   </p>
 </section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
+<!-- JavaScript -->
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
   }
 </script>
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-</footer>
 
 </body>
 </html>

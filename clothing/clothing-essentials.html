@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Light Within the Globe - Clothing Essentials</title>
+  <title>Clothing Essentials | Light Within the Globe</title>
 
-  <!-- SEO Meta Tags -->
+  <!-- Meta Tags -->
   <meta name="description" content="Shop beautiful essentials — quality fashion and wellness products from Light Within the Globe." />
   <meta name="keywords" content="fashion essentials, clothing shop, affordable fashion, Light Within the Globe" />
   <meta name="author" content="Light Within the Globe" />
-
-  <!-- OG Meta Tags -->
   <meta property="og:title" content="Clothing Essentials - Light Within the Globe" />
   <meta property="og:description" content="Discover our beautiful essentials collection — fashion that inspires." />
   <meta property="og:image" content="../images/fashion-essentials.jpg" />
@@ -19,21 +17,64 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* Position hamburger over banner */
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <h1>Light Within the Globe</h1>
-    <p>Creating Impact, Globally</p>
-  </header>
 
-  <!-- Navigation -->
+  <!-- Hamburger Button -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Navigation Menu -->
   <nav>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="../about.html">About Us</a></li>
@@ -69,14 +110,15 @@
     </ul>
   </nav>
 
-  <!-- Hero Section with Logo -->
-  <section class="hero" style="background: url('../images/fashion-essentials.jpg') center center/cover; padding: 6rem 1rem; color: #fff; text-align: center;">
-    <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-    <h2>Clothing Essentials</h2>
-    <p>Shop our beautiful essentials — quality fashion for everyone.</p>
-  </section>
+  <!-- Hero Section -->
+<section class="hero" style="background: url('../images/fashion-essentials.jpg') center center/cover; padding: 6rem 1rem; color: #fff; text-align: center;">
+  <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Light Within the Globe</h1>
+  <h2 style="font-size: 1.7rem;">Clothing Essentials</h2>
+  <p>Shop our beautiful essentials — quality fashion for everyone.</p>
+</section>
 
-  <!-- Essentials Products -->
+
+  <!-- Product Grid -->
   <section class="section" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 2rem;">
     <!-- Product 1 -->
     <div style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px; text-align: center;">
@@ -103,21 +145,17 @@
     </div>
   </section>
 
-  <!-- Script -->
+  <!-- JavaScript -->
   <script>
-  function toggleMenu() {
-    const nav = document.querySelector("nav ul");
-    nav.classList.toggle("active");
-  }
-</script>
-
-
+    function toggleMenu() {
+      const nav = document.querySelector("nav ul");
+      nav.classList.toggle("active");
+    }
+  </script>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-    <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-    <p>Follow us: Facebook | Instagram | YouTube</p>
   </footer>
 </body>
 </html>

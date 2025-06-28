@@ -19,26 +19,63 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header style="display: flex; align-items: center; gap: 1rem;">
-  <img src="images/logo.png" alt="Light Within the Globe Logo" style="height: 60px;" />
-  <div>
-    <h1>Light Within the Globe</h1>
-    <p>Creating Impact, Globally</p>
-  </div>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
 <!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
@@ -75,18 +112,15 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="hero" style="background: url('images/home-banner.png') center center/cover; padding: 6rem 1rem; color: #fff;">
-    <div style="text-align: center;">
-        <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-        <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">About Light Within the Globe</h2>
-        <p style="font-size: 1.2rem;">Our Story • Vision • Mission</p>
-    </div>
+<section class="hero" style="background: url('images/home-banner.png') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
+  <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
+  <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">About Light Within the Globe</h2>
+  <p style="font-size: 1.2rem;">Our Story • Vision • Mission</p>
 </section>
 
-
 <!-- Story Section -->
-<section class="section">
-  <img src="images/3.jpg" alt="Our Story Image" style="width: 100%; max-width: 800px; border-radius: 8px; margin-bottom: 2rem;">
+<section class="section" style="max-width: 900px; margin: auto;">
+  <img src="images/3.jpg" alt="Our Story Image" style="width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
   
   <h3>Our Story</h3>
   <p>
@@ -112,8 +146,8 @@
   </p>
 </section>
 
-<!-- Vision & Mission -->
-<section class="section">
+<!-- Vision & Mission Section -->
+<section class="section" style="max-width: 900px; margin: auto;">
   <h3>Our Vision</h3>
   <p>
     To become a global brand that empowers lives through fashion, transportation, and community impact — lighting the globe with hope and opportunity.
@@ -125,20 +159,19 @@
   </p>
 </section>
 
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector("nav ul");
-    nav.classList.toggle("active");
-  }
-</script>
-
-
 <!-- Footer -->
 <footer>
   <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
   <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
   <p>Follow us: Facebook | Instagram | YouTube</p>
 </footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("active");
+  }
+</script>
 
 </body>
 </html>

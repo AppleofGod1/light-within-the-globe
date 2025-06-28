@@ -10,14 +10,14 @@
   <meta name="keywords" content="Transportation services, Light Within the Globe, logistics, travel, mobility, delivery, transport solutions" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- Open Graph Meta Tags -->
+  <!-- OG Meta Tags -->
   <meta property="og:title" content="Light Within the Globe - Transportation Services" />
   <meta property="og:description" content="Explore our trusted and efficient transportation services that help communities move forward." />
   <meta property="og:image" content="../images/transportation-services.jpg" />
   <meta property="og:url" content="#" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Meta Tags -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Light Within the Globe - Transportation Services" />
   <meta name="twitter:description" content="Explore our trusted and efficient transportation services that help communities move forward." />
@@ -25,22 +25,64 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Light Within the Globe</h1>
-  <p>Creating Impact, Globally</p>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -85,7 +127,7 @@
   </div>
 </section>
 
-<!-- Services Content -->
+<!-- Services Section -->
 <section class="section" style="text-align: center;">
   <img src="../images/transportation-services.jpg" alt="Transportation Services" style="max-width: 100%; border-radius: 8px; margin-top: 2rem;" />
 
@@ -105,18 +147,19 @@
   </p>
 </section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
+<!-- Script -->
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
   }
 </script>
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-</footer>
 
 </body>
 </html>

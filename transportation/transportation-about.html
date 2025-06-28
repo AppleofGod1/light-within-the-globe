@@ -10,37 +10,78 @@
   <meta name="keywords" content="Light Within the Globe Transportation, transportation about, logistics services, delivery mission, safe transport, logistics company" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- Open Graph Meta Tags -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Light Within the Globe - Transportation About" />
   <meta property="og:description" content="Discover the story and mission of Light Within the Globe Transportation — ensuring safe and reliable logistics and delivery solutions." />
   <meta property="og:image" content="../images/transportation-about.jpg" />
   <meta property="og:url" content="#" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Light Within the Globe - Transportation About" />
   <meta name="twitter:description" content="Discover the story and mission of Light Within the Globe Transportation — ensuring safe and reliable logistics and delivery solutions." />
   <meta name="twitter:image" content="../images/transportation-about.jpg" />
 
-  <!-- Link to CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Light Within the Globe</h1>
-  <p>Creating Impact, Globally</p>
-</header>
+<!-- Hamburger Icon -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation Menu -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -76,22 +117,20 @@
   </ul>
 </nav>
 
-<!-- Hero Banner with Logo -->
+<!-- Hero Section with Logo -->
 <section class="hero" style="background: url('../images/home-banner.png') center center/cover no-repeat; padding: 6rem 1rem; color: #fff;">
   <div style="text-align: center;">
     <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
     <h2>About Our Transportation Services</h2>
-    <p>
-      At Light Within the Globe, we believe efficient logistics drive progress. Our transportation services are designed for safety, speed, and satisfaction.
-    </p>
+    <p>At Light Within the Globe, we believe efficient logistics drive progress. Our transportation services are designed for safety, speed, and satisfaction.</p>
   </div>
 </section>
 
-<!-- Main Content -->
+<!-- Main Content Section -->
 <section class="section" style="text-align: center;">
-  <img src="../images/transportation-about.jpg" alt="Transportation About" />
+  <img src="../images/transportation-about.jpg" alt="Transportation About" style="max-width: 100%; border-radius: 8px;" />
 
-  <p>
+  <p style="margin-top: 1.5rem;">
     Our journey began with a vision to connect people and businesses through seamless transport solutions — from goods delivery to personal mobility, powered by trust and innovation.
   </p>
 
@@ -104,6 +143,7 @@
   </p>
 </section>
 
+<!-- JavaScript for Mobile Menu -->
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
@@ -111,10 +151,9 @@
   }
 </script>
 
-
+<!-- Footer -->
 <footer>
   <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
 </footer>
 
 </body>

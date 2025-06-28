@@ -25,27 +25,64 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- Header with Logo -->
-<header style="display: flex; align-items: center; gap: 1rem; padding: 1rem;">
-  <img src="../images/logo.png" alt="Light Within the Globe Logo" style="height: 60px;">
-  <div>
-    <h1 style="margin: 0;">Light Within the Globe</h1>
-    <p style="margin: 0;">Creating Impact, Globally</p>
-  </div>
-</header>
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
 <!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -88,28 +125,18 @@
   <p>Light Within the Globe provides reliable, purpose-driven transport services connecting communities across Africa.</p>
 </section>
 
-
-
 <!-- Main Section -->
 <section class="section" style="text-align: center;">
   <img src="../images/transport.jpg" alt="Transportation" style="max-width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
 
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-    <a href="../transportation/transportation-about.html" class="button">About</a>
-    <a href="../transportation/transportation-services.html" class="button">Services</a>
-    <a href="../transportation/transportation-pricing.html" class="button">Pricing</a>
-    <a href="../transportation/transportation-faq.html" class="button">FAQ</a>
-    <a href="../transportation/transportation-contact.html" class="button">Contact</a>
+    <a href="transportation-about.html" class="button">About</a>
+    <a href="transportation-services.html" class="button">Services</a>
+    <a href="transportation-pricing.html" class="button">Pricing</a>
+    <a href="transportation-faq.html" class="button">FAQ</a>
+    <a href="transportation-contact.html" class="button">Contact</a>
   </div>
 </section>
-
-<!-- JavaScript for menu -->
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector("nav ul");
-    nav.classList.toggle("active");
-  }
-</script>
 
 <!-- Footer -->
 <footer>
@@ -117,6 +144,14 @@
   <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
   <p>Follow us: Facebook | Instagram | YouTube</p>
 </footer>
+
+<!-- JS for hamburger -->
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("active");
+  }
+</script>
 
 </body>
 </html>

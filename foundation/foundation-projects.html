@@ -3,45 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation Projects | Light Within the Globe</title>
 
-  <title>Light Within the Globe - Foundation Projects</title>
-
-  <!-- SEO Meta Tags -->
+  <!-- SEO -->
   <meta name="description" content="See the community projects led by Light Within the Globe Foundation — education, health, empowerment, and outreach programs worldwide." />
   <meta name="keywords" content="Foundation projects, Light Within the Globe Foundation, charity projects, community empowerment, education programs, global outreach" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- Open Graph Meta Tags -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Light Within the Globe - Foundation Projects" />
   <meta property="og:description" content="Explore the impactful community projects driven by Light Within the Globe Foundation around the world." />
   <meta property="og:image" content="../images/foundation-projects.jpg" />
   <meta property="og:url" content="#" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Light Within the Globe - Foundation Projects" />
   <meta name="twitter:description" content="Explore the impactful community projects driven by Light Within the Globe Foundation around the world." />
   <meta name="twitter:image" content="../images/foundation-projects.jpg" />
 
-  <!-- Link to CSS -->
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: yellow;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        text-align: center;
+        padding: 1rem;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Light Within the Globe</h1>
-  <p>Creating Impact, Globally</p>
-</header>
+<!-- Hamburger -->
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
+<!-- Navigation -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
   <ul>
     <li><a href="../index.html">Home</a></li>
     <li><a href="../about.html">About Us</a></li>
@@ -77,21 +116,22 @@
   </ul>
 </nav>
 
-<!-- Hero Banner with Background Image and Logo -->
-<section class="hero" style="background: url('../images/foundation-projects.jpg') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
+<!-- Hero Banner -->
+<section class="hero" style="background: url('../images/foundation-about.jpg') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
   <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-  <h2>Our Foundation Projects</h2>
-  <p>
+  <h2 style="font-size: 2.5rem;">Our Foundation Projects</h2>
+  <p style="font-size: 1.2rem;">
     Light Within the Globe Foundation drives impactful projects around the world — providing education, health, and empowerment where it is needed most.
   </p>
 </section>
 
+<!-- Project List -->
 <section class="section" style="text-align: center;">
   <ul style="max-width: 700px; margin: 2rem auto; text-align: left; line-height: 1.8;">
-    <li>📚 Education Support — providing books, materials, and school sponsorships for children in underserved communities</li>
-    <li>🩺 Health & Wellness — organizing health awareness programs, free medical camps, and nutrition support</li>
-    <li>👩‍👩‍👧‍👦 Women’s Empowerment — training programs for skills development, entrepreneurship, and financial independence</li>
-    <li>🏫 Community Development — supporting local initiatives that uplift communities and promote positive change</li>
+    <li>📚 <strong>Education Support</strong> — providing books, materials, and school sponsorships for children in underserved communities</li>
+    <li>🩺 <strong>Health & Wellness</strong> — organizing health awareness programs, free medical camps, and nutrition support</li>
+    <li>👩‍👩‍👧‍👦 <strong>Women’s Empowerment</strong> — training programs for skills development, entrepreneurship, and financial independence</li>
+    <li>🏫 <strong>Community Development</strong> — supporting local initiatives that uplift communities and promote positive change</li>
   </ul>
 
   <p style="margin-top: 2rem;">
@@ -99,19 +139,18 @@
   </p>
 </section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
+</footer>
+
 <script>
   function toggleMenu() {
     const nav = document.querySelector("nav ul");
     nav.classList.toggle("active");
   }
 </script>
-
-
-
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  <p>📍 Your Location | 📞 +YourPhone | 📧 your@email.com</p>
-</footer>
 
 </body>
 </html>
