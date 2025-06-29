@@ -162,6 +162,26 @@
       display: inline-block;
     }
 
+    .product-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .product-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
     footer {
       background: var(--primary-color);
       color: #fff;
@@ -173,8 +193,6 @@
 </head>
 
 <body>
-
-  <!-- Header -->
   <header class="top-bar">
     <div class="hamburger" onclick="toggleMenu()">
       <div></div>
@@ -187,7 +205,6 @@
     </div>
   </header>
 
-  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="../index.html">Home</a></li>
@@ -224,13 +241,11 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h2>Kids Collection</h2>
     <p>Shop beautiful shoes, dresses, t-shirts, and more for kids.</p>
   </section>
 
-  <!-- Category Buttons -->
   <section class="section" style="text-align: center;">
     <a href="#shoes" class="button">Shoes</a>
     <a href="#slippers" class="button">Slippers</a>
@@ -239,14 +254,60 @@
     <a href="#accessories" class="button">Accessories</a>
   </section>
 
-  <!-- (Product sections can follow here, e.g. grid display) -->
+  <section class="section" id="shoes">
+    <h2 style="text-align:center">Shoes</h2>
+    <div class="product-grid-4">
+      <div class="product-card"><img src="../images/kid-shoe1.jpg"><h3>Kids Sneakers</h3><p><strong>Price:</strong> $25</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-shoe2.jpg"><h3>Colorful Sandals</h3><p><strong>Price:</strong> $20</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-shoe3.jpg"><h3>Velcro Runners</h3><p><strong>Price:</strong> $22</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-shoe4.jpg"><h3>Mini Boots</h3><p><strong>Price:</strong> $28</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+    </div>
+  </section>
 
-  <!-- Footer -->
+  <section class="section" id="slippers">
+    <h2 style="text-align:center">Slippers</h2>
+    <div class="product-grid-4">
+      <div class="product-card"><img src="../images/kid-slipper1.jpg"><h3>Fluffy Slippers</h3><p><strong>Price:</strong> $15</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-slipper2.jpg"><h3>Animal Slides</h3><p><strong>Price:</strong> $12</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-slipper3.jpg"><h3>Cartoon Flip Flops</h3><p><strong>Price:</strong> $14</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-slipper4.jpg"><h3>Comfy Cushions</h3><p><strong>Price:</strong> $13</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="dresses">
+    <h2 style="text-align:center">Dresses</h2>
+    <div class="product-grid-4">
+      <div class="product-card"><img src="../images/kid-dress1.jpg"><h3>Floral Frock</h3><p><strong>Price:</strong> $30</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-dress2.jpg"><h3>Summer Gown</h3><p><strong>Price:</strong> $32</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-dress3.jpg"><h3>Princess Dress</h3><p><strong>Price:</strong> $35</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-dress4.jpg"><h3>Party Outfit</h3><p><strong>Price:</strong> $38</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="tshirts">
+    <h2 style="text-align:center">T-Shirts</h2>
+    <div class="product-grid-4">
+      <div class="product-card"><img src="../images/kid-shirt1.jpg"><h3>Cartoon Tee</h3><p><strong>Price:</strong> $18</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-shirt2.jpg"><h3>Striped Tee</h3><p><strong>Price:</strong> $16</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-shirt3.jpg"><h3>Graphic Tee</h3><p><strong>Price:</strong> $17</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-shirt4.jpg"><h3>Plain Color Tee</h3><p><strong>Price:</strong> $15</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="accessories">
+    <h2 style="text-align:center">Accessories</h2>
+    <div class="product-grid-4">
+      <div class="product-card"><img src="../images/kid-accessory1.jpg"><h3>Kids Hat</h3><p><strong>Price:</strong> $10</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-accessory2.jpg"><h3>Mini Backpack</h3><p><strong>Price:</strong> $22</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-accessory3.jpg"><h3>Cartoon Watch</h3><p><strong>Price:</strong> $18</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+      <div class="product-card"><img src="../images/kid-accessory4.jpg"><h3>Kids Sunglasses</h3><p><strong>Price:</strong> $12</p><a class="button" href="https://wa.me/23272146015">Order Now</a></div>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
   </footer>
 
-  <!-- Mobile Menu Script -->
   <script>
     function toggleMenu() {
       const nav = document.querySelector("nav ul");
