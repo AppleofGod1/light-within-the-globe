@@ -10,16 +10,30 @@
   <meta name="keywords" content="About Light Within the Globe, fashion, transportation, foundation, global brand, charity, mission, vision" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- OG Meta Tags -->
-  <meta property="og:title" content="Light Within the Globe - About Us" />
-  <meta property="og:description" content="Discover the story, vision, and mission of Light Within the Globe — creating impact globally through fashion, transportation, and giving back." />
-  <meta property="og:image" content="images/about-hero.jpg" />
-  <meta property="og:url" content="#" />
-  <meta property="og:type" content="website" />
-
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <style>
+    :root {
+      --primary-color: #002F5F;
+      --accent-color: #C5A24D;
+      --white: #ffffff;
+      --light-bg: #f9f9f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: var(--light-bg);
+      display: flex;
+      flex-direction: column;
+    }
+
     .hamburger {
       position: absolute;
       top: 20px;
@@ -33,8 +47,51 @@
     .hamburger div {
       width: 30px;
       height: 4px;
-      background-color: yellow;
+      background-color: var(--accent-color);
       margin: 5px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: var(--primary-color);
+      padding: 0.5rem 1rem;
+    }
+
+    nav ul li {
+      position: relative;
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.5rem;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--primary-color);
+      padding: 0.5rem 0;
+      z-index: 999;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 0.5rem 1rem;
     }
 
     @media (max-width: 768px) {
@@ -45,131 +102,175 @@
       nav ul {
         display: none;
         flex-direction: column;
-        background-color: #333;
         text-align: center;
-        padding: 1rem;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
       }
 
       nav ul.active {
         display: flex;
       }
 
-      nav ul li {
-        margin: 0.5rem 0;
+      nav ul li ul {
+        position: static;
       }
+    }
+
+    .banner {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: var(--white);
+    }
+
+    .banner img {
+      max-height: 70px;
+      max-width: 220px;
+      width: auto;
+      height: auto;
+    }
+
+    .banner .slogan {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('images/home-banner.png') center center/cover no-repeat;
+      padding: 6rem 1rem;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .section h3 {
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+    }
+
+    .section p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: auto;
     }
   </style>
 </head>
-
 <body>
 
-<!-- Hamburger Menu -->
-<div class="hamburger" onclick="toggleMenu()">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+  <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 
-<!-- Navigation -->
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li>
-      <a href="clothing/clothing.html">Clothing ▼</a>
-      <ul>
-        <li><a href="clothing/clothing-essentials.html">Essentials</a></li>
-        <li><a href="clothing/clothing-men.html">Men</a></li>
-        <li><a href="clothing/clothing-women.html">Women</a></li>
-        <li><a href="clothing/clothing-kids.html">Kids</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="transportation/transportation.html">Transportation ▼</a>
-      <ul>
-        <li><a href="transportation/transportation-about.html">About</a></li>
-        <li><a href="transportation/transportation-services.html">Services</a></li>
-        <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
-        <li><a href="transportation/transportation-faq.html">FAQ</a></li>
-        <li><a href="transportation/transportation-contact.html">Contact</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="foundation/foundation.html">Foundation ▼</a>
-      <ul>
-        <li><a href="foundation/foundation-about.html">About</a></li>
-        <li><a href="foundation/foundation-projects.html">Projects</a></li>
-        <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
-        <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
-      </ul>
-    </li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Logo Banner -->
+  <section class="banner">
+    <img src="images/logo.png" alt="Light Within the Globe Logo" />
+    <p class="slogan">Creating Impact, Globally</p>
+  </section>
 
-<!-- Hero Section -->
-<section class="hero" style="background: url('images/home-banner.png') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
-  <img src="images/logo.png" alt="Light Within the Globe Logo" style="max-width: 200px; margin-bottom: 1rem;" />
-  <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">About Light Within the Globe</h2>
-  <p style="font-size: 1.2rem;">Our Story • Vision • Mission</p>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li>
+        <a href="clothing/clothing.html">Clothing ▼</a>
+        <ul>
+          <li><a href="clothing/clothing-essentials.html">Essentials</a></li>
+          <li><a href="clothing/clothing-men.html">Men</a></li>
+          <li><a href="clothing/clothing-women.html">Women</a></li>
+          <li><a href="clothing/clothing-kids.html">Kids</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="transportation/transportation.html">Transportation ▼</a>
+        <ul>
+          <li><a href="transportation/transportation-about.html">About</a></li>
+          <li><a href="transportation/transportation-services.html">Services</a></li>
+          <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
+          <li><a href="transportation/transportation-faq.html">FAQ</a></li>
+          <li><a href="transportation/transportation-contact.html">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="foundation/foundation.html">Foundation ▼</a>
+        <ul>
+          <li><a href="foundation/foundation-about.html">About</a></li>
+          <li><a href="foundation/foundation-projects.html">Projects</a></li>
+          <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
+          <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+    <!-- Welcome Text -->
+<section class="welcome">
+  <h2>Welcome to Light Within the Globe</h2>
+  <p>About Us – Our Story • Vision • Mission</p>
 </section>
 
-<!-- Story Section -->
-<section class="section" style="max-width: 900px; margin: auto;">
-  <img src="images/3.jpg" alt="Our Story Image" style="width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
-  
-  <h3>Our Story</h3>
-  <p>
-    Light Within the Globe was born from a simple but powerful inspiration — an experience that began in our own community.
-  </p>
-  <p>
-    We saw that many young children around us faced great challenges. Their families could not afford the basic school materials needed to attend and succeed in school. Many lacked books, pens, pencils — even proper clothing — and as a result, their education and confidence suffered.
-  </p>
-  <p>
-    Wanting to make a difference, we started stepping in where we could — providing school supplies, clothing, and sometimes small amounts of financial support to help them along the way.
-  </p>
-  <p>
-    From this experience, the vision for Light Within the Globe began to take shape. We realized that this need was not limited to one community alone — children and families everywhere face similar struggles. We wanted to build something greater, something that would grow beyond one place — a platform where others could also join and contribute, creating lasting impact.
-  </p>
-  <p>
-    And so, Light Within the Globe was launched in 2025 — a global brand dedicated to making a positive difference.
-  </p>
-  <p>
-    We started with our clothing business — because when people feel good in what they wear, they carry themselves with pride, joy, and confidence. Our clothing business also helps support our larger mission: funding educational initiatives, transportation support, and community upliftment through our foundation work.
-  </p>
-  <p>
-    Our mission is simple: <strong>Creating Impact, Globally</strong> — and we invite all who share this vision to walk this journey with us.
-  </p>
-</section>
+  <!-- Story Section -->
+  <section class="section">
+    <img src="images/3.jpg" alt="Our Story Image" />
+    
+    <h3>Our Story</h3>
+    <p>Light Within the Globe was born from a simple but powerful inspiration — an experience that began in our own community.</p>
+    <p>We saw that many young children around us faced great challenges. Their families could not afford the basic school materials needed to attend and succeed in school.</p>
+    <p>Wanting to make a difference, we started stepping in where we could — providing school supplies, clothing, and sometimes small amounts of financial support to help them along the way.</p>
+    <p>From this experience, the vision for Light Within the Globe began to take shape...</p>
+    <p>We started with our clothing business... Our mission is simple: <strong>Creating Impact, Globally</strong>.</p>
+  </section>
 
-<!-- Vision & Mission Section -->
-<section class="section" style="max-width: 900px; margin: auto;">
-  <h3>Our Vision</h3>
-  <p>
-    To become a global brand that empowers lives through fashion, transportation, and community impact — lighting the globe with hope and opportunity.
-  </p>
+  <!-- Vision & Mission Section -->
+  <section class="section">
+    <h3>Our Vision</h3>
+    <p>To become a global brand that empowers lives through fashion, transportation, and community impact — lighting the globe with hope and opportunity.</p>
 
-  <h3>Our Mission</h3>
-  <p>
-    We create beautiful fashion and offer transport services that inspire dignity and mobility. Through every effort, we support education, healthcare, and opportunities for less privileged children — helping them grow into leaders of tomorrow.
-  </p>
-</section>
+    <h3>Our Mission</h3>
+    <p>We create beautiful fashion and offer transport services that inspire dignity and mobility. Through every effort, we support education, healthcare, and opportunities for less privileged children.</p>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  </footer>
 
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector("nav ul");
-    nav.classList.toggle("active");
-  }
-</script>
-
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector("nav ul");
+      nav.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
