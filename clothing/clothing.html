@@ -10,92 +10,271 @@
   <meta name="keywords" content="Light Within the Globe Clothing, fashion, essentials, men’s wear, women’s wear, kids fashion, global brand" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Light Within the Globe - Clothing Collection" />
-  <meta property="og:description" content="Discover Light Within the Globe fashion — stylish and purpose-driven clothing for men, women, and kids." />
-  <meta property="og:image" content="../images/clothing-main.jpg" />
-  <meta property="og:url" content="#" />
-  <meta property="og:type" content="website" />
-
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    :root {
+      --primary-color: #002F5F;
+      --accent-color: #C5A24D;
+      --white: #ffffff;
+      --light-bg: #f9f9f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: var(--light-bg);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--white);
+      padding: 10px 20px;
+    }
+
+    .logo-container {
+      text-align: center;
+      flex: 1;
+    }
+
+    .logo-container img {
+      max-height: 70px;
+      max-width: 220px;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+    .logo-container .slogan {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: var(--accent-color);
+      margin: 5px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: var(--primary-color);
+      padding: 0.5rem 1rem;
+    }
+
+    nav ul li {
+      position: relative;
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.5rem;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--primary-color);
+      padding: 0.5rem 0;
+      z-index: 999;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li ul {
+        position: static;
+      }
+    }
+
+    .hero {
+      background: url('../images/home-banner.png') center center/cover no-repeat;
+      padding: 6rem 1rem;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      background: var(--accent-color);
+      color: var(--white);
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .section .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: auto;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- Hamburger -->
-<div class="hamburger" onclick="toggleMenu()">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+  <!-- Header with Logo and Hamburger -->
+  <header class="top-bar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo-container">
+      <img src="../images/logo.png" alt="Light Within the Globe Logo" />
+      <p class="slogan">Creating Impact, Globally</p>
+    </div>
+  </header>
 
-<!-- Navigation Menu -->
-<nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About Us</a></li>
-    <li>
-      <a href="../clothing/clothing.html">Clothing ▼</a>
-      <ul>
-        <li><a href="../clothing/clothing-essentials.html">Essentials</a></li>
-        <li><a href="../clothing/clothing-men.html">Men</a></li>
-        <li><a href="../clothing/clothing-women.html">Women</a></li>
-        <li><a href="../clothing/clothing-kids.html">Kids</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="../transportation/transportation.html">Transportation ▼</a>
-      <ul>
-        <li><a href="../transportation/transportation-about.html">About</a></li>
-        <li><a href="../transportation/transportation-services.html">Services</a></li>
-        <li><a href="../transportation/transportation-pricing.html">Pricing</a></li>
-        <li><a href="../transportation/transportation-faq.html">FAQ</a></li>
-        <li><a href="../transportation/transportation-contact.html">Contact</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="../foundation/foundation.html">Foundation ▼</a>
-      <ul>
-        <li><a href="../foundation/foundation-about.html">About</a></li>
-        <li><a href="../foundation/foundation-projects.html">Projects</a></li>
-        <li><a href="../foundation/foundation-involved.html">Get Involved</a></li>
-        <li><a href="../foundation/foundation-gallery.html">Gallery</a></li>
-      </ul>
-    </li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li>
+        <a href="../clothing/clothing.html">Clothing ▼</a>
+        <ul>
+          <li><a href="../clothing/clothing-essentials.html">Essentials</a></li>
+          <li><a href="../clothing/clothing-men.html">Men</a></li>
+          <li><a href="../clothing/clothing-women.html">Women</a></li>
+          <li><a href="../clothing/clothing-kids.html">Kids</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../transportation/transportation.html">Transportation ▼</a>
+        <ul>
+          <li><a href="../transportation/transportation-about.html">About</a></li>
+          <li><a href="../transportation/transportation-services.html">Services</a></li>
+          <li><a href="../transportation/transportation-pricing.html">Pricing</a></li>
+          <li><a href="../transportation/transportation-faq.html">FAQ</a></li>
+          <li><a href="../transportation/transportation-contact.html">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../foundation/foundation.html">Foundation ▼</a>
+        <ul>
+          <li><a href="../foundation/foundation-about.html">About</a></li>
+          <li><a href="../foundation/foundation-projects.html">Projects</a></li>
+          <li><a href="../foundation/foundation-involved.html">Get Involved</a></li>
+          <li><a href="../foundation/foundation-gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- Hero Banner Only -->
-<section class="hero" style="background: url('../images/home-banner.png') center center/cover no-repeat; padding: 6rem 1rem; color: #fff; text-align: center;">
-  <img src="../images/logo.png" alt="Light Within the Globe Logo" style="max-width: 150px; margin-bottom: 1rem;" />
-  <h2 style="font-size: 2.5rem;">Our Clothing Collection</h2>
-  <p style="font-size: 1.2rem;">Fashion with purpose — Essentials, Men, Women & Kids</p>
-</section>
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h2>Our Clothing Collection</h2>
+    <p>Fashion with purpose — Essentials, Men, Women & Kids</p>
+  </section>
 
+  <!-- Category Buttons -->
+  <section class="section">
+    <img src="../images/clothing-main.jpg" alt="Light Within the Globe Clothing" />
+    <div class="button-group">
+      <a href="../clothing/clothing-essentials.html" class="button">Essentials</a>
+      <a href="../clothing/clothing-men.html" class="button">Men</a>
+      <a href="../clothing/clothing-women.html" class="button">Women</a>
+      <a href="../clothing/clothing-kids.html" class="button">Kids</a>
+    </div>
+  </section>
 
-<!-- Category Buttons -->
-<section class="section" style="text-align: center; padding: 2rem;">
-  <img src="../images/clothing-main.jpg" alt="Light Within the Globe Clothing" style="max-width: 100%; border-radius: 8px; margin-bottom: 2rem;" />
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-    <a href="../clothing/clothing-essentials.html" class="button">Essentials</a>
-    <a href="../clothing/clothing-men.html" class="button">Men</a>
-    <a href="../clothing/clothing-women.html" class="button">Women</a>
-    <a href="../clothing/clothing-kids.html" class="button">Kids</a>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
+  </footer>
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-</footer>
-
-<script>
-  function toggleMenu() {
-    const nav = document.querySelector("nav ul");
-    nav.classList.toggle("active");
-  }
-</script>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector("nav ul");
+      nav.classList.toggle("active");
+    }
+  </script>
 
 </body>
 </html>

@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Light Within the Globe - About Us</title>
+  <title>About Us | Light Within the Globe</title>
 
-  <!-- SEO Meta Tags -->
   <meta name="description" content="Learn the story, vision, and mission of Light Within the Globe — inspiring change through fashion, transportation, and giving back." />
   <meta name="keywords" content="About Light Within the Globe, fashion, transportation, foundation, global brand, charity, mission, vision" />
   <meta name="author" content="Light Within the Globe" />
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
+
   <style>
     :root {
       --primary-color: #002F5F;
       --accent-color: #C5A24D;
-      --white: #ffffff;
       --light-bg: #f9f9f9;
+      --white: #ffffff;
     }
 
     * {
@@ -34,10 +33,36 @@
       flex-direction: column;
     }
 
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--white);
+      padding: 10px 20px;
+    }
+
+    .logo-container {
+      text-align: center;
+      flex: 1;
+    }
+
+    .logo-container img {
+      max-height: 70px;
+      max-width: 220px;
+      width: auto;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+    .logo-container .slogan {
+      color: var(--accent-color);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
     .hamburger {
-      position: absolute;
-      top: 20px;
-      left: 20px;
       display: none;
       flex-direction: column;
       cursor: pointer;
@@ -114,40 +139,19 @@
       }
     }
 
-    .banner {
+    .welcome {
       text-align: center;
-      padding: 1.5rem 0;
-      background-color: var(--white);
+      padding: 2rem 1rem;
     }
 
-    .banner img {
-      max-height: 70px;
-      max-width: 220px;
-      width: auto;
-      height: auto;
+    .welcome h2 {
+      color: var(--primary-color);
+      font-size: 2rem;
     }
 
-    .banner .slogan {
+    .welcome p {
       color: var(--accent-color);
       font-size: 1.1rem;
-      margin-top: 0.5rem;
-      font-weight: 500;
-    }
-
-    .hero {
-      background: url('images/home-banner.png') center center/cover no-repeat;
-      padding: 6rem 1rem;
-      text-align: center;
-      color: var(--white);
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
     }
 
     .section {
@@ -182,21 +186,18 @@
   </style>
 </head>
 <body>
+  <header class="top-bar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Light Within the Globe Logo" />
+      <p class="slogan">Creating Impact, Globally</p>
+    </div>
+  </header>
 
-  <!-- Hamburger Menu -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <!-- Logo Banner -->
-  <section class="banner">
-    <img src="images/logo.png" alt="Light Within the Globe Logo" />
-    <p class="slogan">Creating Impact, Globally</p>
-  </section>
-
-  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -233,17 +234,13 @@
     </ul>
   </nav>
 
+  <section class="welcome">
+    <h2>Welcome to Light Within the Globe</h2>
+    <p>About Us – Our Story • Vision • Mission</p>
+  </section>
 
-    <!-- Welcome Text -->
-<section class="welcome">
-  <h2>Welcome to Light Within the Globe</h2>
-  <p>About Us – Our Story • Vision • Mission</p>
-</section>
-
-  <!-- Story Section -->
   <section class="section">
     <img src="images/3.jpg" alt="Our Story Image" />
-    
     <h3>Our Story</h3>
     <p>Light Within the Globe was born from a simple but powerful inspiration — an experience that began in our own community.</p>
     <p>We saw that many young children around us faced great challenges. Their families could not afford the basic school materials needed to attend and succeed in school.</p>
@@ -252,7 +249,6 @@
     <p>We started with our clothing business... Our mission is simple: <strong>Creating Impact, Globally</strong>.</p>
   </section>
 
-  <!-- Vision & Mission Section -->
   <section class="section">
     <h3>Our Vision</h3>
     <p>To become a global brand that empowers lives through fashion, transportation, and community impact — lighting the globe with hope and opportunity.</p>
@@ -261,7 +257,6 @@
     <p>We create beautiful fashion and offer transport services that inspire dignity and mobility. Through every effort, we support education, healthcare, and opportunities for less privileged children.</p>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
   </footer>
