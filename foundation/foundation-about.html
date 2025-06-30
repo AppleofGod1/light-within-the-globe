@@ -146,9 +146,10 @@
 
     .hero {
       background: url('../images/foundation-about.jpg') center center/cover no-repeat;
-      padding: 6rem 1rem;
+      padding: 4rem 1rem;
       color: var(--white);
       text-align: center;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Ensures readability */
     }
 
     .hero h2 {
@@ -176,6 +177,20 @@
       border-radius: 5px;
       margin-top: 1.5rem;
       display: inline-block;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 55px;
+      height: 55px;
+    }
+
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
     }
 
     footer {
@@ -259,11 +274,11 @@
     </p>
   </section>
 
-
   <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
-</a>
+  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>

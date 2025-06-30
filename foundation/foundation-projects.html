@@ -152,8 +152,8 @@
 
     .hero {
       background: url('../images/foundation-about.jpg') center center/cover no-repeat;
-      padding: 6rem 1rem;
-      color: var(--white);
+      padding: 4rem 1rem;
+      color: var(--primary-color); /* Changed from white to blue */
       text-align: center;
     }
 
@@ -189,6 +189,20 @@
       margin: 2rem auto;
       text-align: left;
       line-height: 1.8;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 55px;
+      height: 55px;
+    }
+
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
     }
 
     footer {
@@ -271,12 +285,10 @@
     <a href="../foundation/foundation.html" class="button">Back to Foundation</a>
   </section>
 
-
-
   <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
-</a>
+  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
 
   <!-- Footer -->
   <footer>

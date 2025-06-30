@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Foundation Gallery | Light Within the Globe</title>
 
   <!-- SEO Meta Tags -->
@@ -144,8 +143,8 @@
 
     .hero {
       background: url('../images/foundation-gallery.jpg') center center/cover no-repeat;
-      padding: 6rem 1rem;
-      color: var(--white);
+      padding: 4rem 1rem;
+      color: var(--primary-color); /* Blue instead of white for visibility */
       text-align: center;
     }
 
@@ -185,6 +184,20 @@
       border-radius: 5px;
       margin-top: 2rem;
       display: inline-block;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 55px;
+      height: 55px;
+    }
+
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
     }
 
     footer {
@@ -267,12 +280,10 @@
     <a href="../foundation/foundation.html" class="button">Back to Foundation</a>
   </section>
 
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
-</a>
-
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
 
   <!-- Footer -->
   <footer>

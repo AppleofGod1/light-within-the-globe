@@ -140,18 +140,19 @@
     }
 
     .hero {
-      background: url('../images/home-banner.png') center center/cover no-repeat;
-      padding: 6rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
-      color: var(--white);
+      background-color: var(--light-bg);
     }
 
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+      color: var(--primary-color);
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      color: var(--primary-color);
       margin-top: 0.5rem;
     }
 
@@ -191,6 +192,18 @@
       text-align: center;
       padding: 1rem 0;
       margin-top: auto;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
@@ -247,7 +260,6 @@
     </ul>
   </nav>
 
-
   <!-- Hero Banner -->
   <section class="hero">
     <h2>Our Clothing Collection</h2>
@@ -265,12 +277,10 @@
     </div>
   </section>
 
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
-</a>
-
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
 
   <!-- Footer -->
   <footer>
