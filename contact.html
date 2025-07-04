@@ -102,22 +102,11 @@
       color: var(--accent-color);
     }
 
-    nav ul li ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: var(--primary-color);
-      padding: 0.5rem 0;
-      z-index: 999;
-    }
-
-    nav ul li:hover ul {
-      display: block;
-    }
-
-    nav ul li ul li a {
-      padding: 0.5rem 1rem;
+    .upcoming {
+      color: gold;
+      font-weight: bold;
+      font-size: 0.9rem;
+      padding-left: 5px;
     }
 
     @media (max-width: 768px) {
@@ -133,10 +122,6 @@
 
       nav ul.active {
         display: flex;
-      }
-
-      nav ul li ul {
-        position: static;
       }
     }
 
@@ -201,6 +186,18 @@
       padding: 1rem 0;
       margin-top: auto;
     }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 50px;
+      height: 50px;
+    }
   </style>
 </head>
 
@@ -233,25 +230,8 @@
           <li><a href="clothing/clothing-kids.html">Kids</a></li>
         </ul>
       </li>
-      <li>
-        <a href="transportation/transportation.html">Transportation ▼</a>
-        <ul>
-          <li><a href="transportation/transportation-about.html">About</a></li>
-          <li><a href="transportation/transportation-services.html">Services</a></li>
-          <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
-          <li><a href="transportation/transportation-faq.html">FAQ</a></li>
-          <li><a href="transportation/transportation-contact.html">Contact</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="foundation/foundation.html">Foundation ▼</a>
-        <ul>
-          <li><a href="foundation/foundation-about.html">About</a></li>
-          <li><a href="foundation/foundation-projects.html">Projects</a></li>
-          <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
-          <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
-        </ul>
-      </li>
+      <li><a href="coming-soon.html">Transportation <span class="upcoming">(Upcoming)</span></a></li>
+      <li><a href="coming-soon.html">Foundation <span class="upcoming">(Upcoming)</span></a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -290,18 +270,16 @@
 
     <h3 style="margin-top: 2rem;">Prefer WhatsApp?</h3>
     <p>
-      <a href="https://wa.me/YourWhatsAppNumber" target="_blank" class="button" style="background: #25D366;">
+      <a href="https://wa.me/23272146015" target="_blank" class="button" style="background: #25D366;">
         Message Us on WhatsApp
       </a>
     </p>
   </section>
 
-
-
   <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="./images/whatsapp-icon.png" alt="Chat on WhatsApp">
-</a>
+  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="images/whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
 
   <!-- Footer -->
   <footer>
@@ -314,5 +292,6 @@
       nav.classList.toggle("active");
     }
   </script>
+
 </body>
 </html>

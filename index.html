@@ -51,8 +51,6 @@
     .logo-container img {
       max-height: 70px;
       max-width: 220px;
-      width: auto;
-      height: auto;
       display: block;
       margin: auto;
     }
@@ -103,24 +101,6 @@
       color: var(--accent-color);
     }
 
-    nav ul li ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: var(--primary-color);
-      padding: 0.5rem 0;
-      z-index: 999;
-    }
-
-    nav ul li:hover ul {
-      display: block;
-    }
-
-    nav ul li ul li a {
-      padding: 0.5rem 1rem;
-    }
-
     @media (max-width: 768px) {
       .hamburger {
         display: flex;
@@ -134,10 +114,6 @@
 
       nav ul.active {
         display: flex;
-      }
-
-      nav ul li ul {
-        position: static;
       }
     }
 
@@ -195,7 +171,7 @@
 
 <body>
 
-  <!-- Header with Logo and Hamburger -->
+  <!-- Header -->
   <header class="top-bar">
     <div class="hamburger" onclick="toggleMenu()">
       <div></div>
@@ -222,30 +198,13 @@
           <li><a href="clothing/clothing-kids.html">Kids</a></li>
         </ul>
       </li>
-      <li>
-        <a href="transportation/transportation.html">Transportation ▼</a>
-        <ul>
-          <li><a href="transportation/transportation-about.html">About</a></li>
-          <li><a href="transportation/transportation-services.html">Services</a></li>
-          <li><a href="transportation/transportation-pricing.html">Pricing</a></li>
-          <li><a href="transportation/transportation-faq.html">FAQ</a></li>
-          <li><a href="transportation/transportation-contact.html">Contact</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="foundation/foundation.html">Foundation ▼</a>
-        <ul>
-          <li><a href="foundation/foundation-about.html">About</a></li>
-          <li><a href="foundation/foundation-projects.html">Projects</a></li>
-          <li><a href="foundation/foundation-involved.html">Get Involved</a></li>
-          <li><a href="foundation/foundation-gallery.html">Gallery</a></li>
-        </ul>
-      </li>
+      <li><a href="coming-soon.html">Transportation <span style="color: gold;">(Upcoming)</span></a></li>
+      <li><a href="coming-soon.html">Foundation <span style="color: gold;">(Upcoming)</span></a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Welcome Section -->
+  <!-- Welcome -->
   <section class="welcome">
     <h2>Welcome to Light Within the Globe</h2>
     <p>Fashion. Transportation. Foundation. Supporting children, globally.</p>
@@ -263,37 +222,34 @@
     </div>
   </section>
 
-  <!-- Transportation Section -->
+  <!-- Transportation (Coming Soon) -->
   <section class="section" style="flex-wrap: wrap-reverse;">
     <div style="flex: 1; min-width: 300px;">
-      <h2>Transportation You Can Trust</h2>
+      <h2>Transportation You Can Trust <span style="color: red;">(Upcoming)</span></h2>
       <p>Reliable, safe, and affordable transport services for every journey — built for your comfort and convenience.</p>
-      <a href="transportation/transportation.html" class="button">Explore Services</a>
+      <a href="coming-soon.html" class="button">Coming Soon</a>
     </div>
     <div style="flex: 1; min-width: 300px;">
       <img src="images/transport.jpg" alt="Transportation" />
     </div>
   </section>
 
-  <!-- Foundation Section -->
+  <!-- Foundation (Coming Soon) -->
   <section class="section">
     <div style="flex: 1; min-width: 300px;">
       <img src="images/her.jpg" alt="Foundation Work" />
     </div>
     <div style="flex: 1; min-width: 300px;">
-      <h2>Giving Back Through Our Foundation</h2>
+      <h2>Giving Back Through Our Foundation <span style="color: red;">(Upcoming)</span></h2>
       <p>We support children whose parents cannot meet their basic needs. Through education, nutrition, and care, we bring hope and opportunity to the next generation.</p>
-      <a href="foundation/foundation.html" class="button">Support Our Work</a>
+      <a href="coming-soon.html" class="button">Coming Soon</a>
     </div>
   </section>
 
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-  <img src="./images/whatsapp-icon.png" alt="Chat on WhatsApp">
-</a>
-
-
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="./images/whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
 
   <!-- Footer -->
   <footer>
