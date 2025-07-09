@@ -244,3 +244,43 @@ img, .section, .container, header, footer {
   height: 55px;
   border-radius: 50%;
 }
+
+
+.email-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.email-link::after {
+  content: " (Send Email)";
+  color: var(--accent-color);
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.email-link:hover::after {
+  opacity: 1;
+}
+
+
+.call-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.call-link::after {
+  content: " (Call)";
+  color: var(--accent-color);
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.call-link:hover::after {
+  opacity: 1;
+}
