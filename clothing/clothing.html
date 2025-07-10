@@ -1,38 +1,33 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clothing Collection | Light Within the Globe</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Explore Light Within the Globe Clothing Collection — Essentials, Men, Women, and Kids fashion designed to inspire confidence and style." />
-  <meta name="keywords" content="Light Within the Globe Clothing, fashion, essentials, men's wear, women's wear, kids fashion, global fashion brand" />
-  <meta name="author" content="Light Within the Globe" />
-
-  <!-- Open Graph / Facebook / WhatsApp -->
-  <meta property="og:title" content="Clothing Collection - Light Within the Globe" />
-  <meta property="og:description" content="Shop our Clothing Collection — discover Essentials, Men, Women, and Kids fashion with purpose." />
-  <meta property="og:image" content="https://lightwithintheglobe.com/images/og-cover.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Light Within the Globe Clothing" />
-  <meta property="og:url" content="https://lightwithintheglobe.com/clothing/clothing.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Light Within the Globe" />
-  <meta property="og:locale" content="en_GB" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Clothing Collection - Light Within the Globe" />
-  <meta name="twitter:description" content="Browse purpose-driven fashion — stylish essentials, men's wear, women's styles, and kids outfits." />
-  <meta name="twitter:image" content="https://lightwithintheglobe.com/images/og-cover.png" />
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clothing Collection | Light Within the Globe</title>
+<!-- SEO Meta Tags -->
+<meta content="Explore Light Within the Globe Clothing Collection — Essentials, Men, Women, and Kids fashion designed to inspire confidence and style." name="description"/>
+<meta content="Light Within the Globe Clothing, fashion, essentials, men's wear, women's wear, kids fashion, global fashion brand" name="keywords"/>
+<meta content="Light Within the Globe" name="author"/>
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta content="Clothing Collection - Light Within the Globe" property="og:title"/>
+<meta content="Shop our Clothing Collection — discover Essentials, Men, Women, and Kids fashion with purpose." property="og:description"/>
+<meta content="https://lightwithintheglobe.com/images/og-cover.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Light Within the Globe Clothing" property="og:image:alt"/>
+<meta content="https://lightwithintheglobe.com/clothing/clothing.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="Light Within the Globe" property="og:site_name"/>
+<meta content="en_GB" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Clothing Collection - Light Within the Globe" name="twitter:title"/>
+<meta content="Browse purpose-driven fashion — stylish essentials, men's wear, women's styles, and kids outfits." name="twitter:description"/>
+<meta content="https://lightwithintheglobe.com/images/og-cover.png" name="twitter:image"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -47,14 +42,10 @@
     }
   }
   </script>
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-
-
-  <link rel="stylesheet" href="../css/style.css" />
-
-  <style>
+<!-- Favicon -->
+<link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<style>
     :root {
       --primary-color: #002F5F;
       --accent-color: #C5A24D;
@@ -256,77 +247,77 @@
       height: 50px;
     }
   </style>
-</head>
-
+<style>
+    @media (max-width: 768px) {
+      .hamburger {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 999;
+      }
+    }
+    </style></head>
 <body>
-
-  <!-- Header with Logo and Hamburger -->
-  <header class="top-bar">
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../about.html">About Us</a></li>
-      <li>
-        <a href="../clothing/clothing.html">Clothing ▼</a>
-        <ul>
-          <li><a href="../clothing/clothing-essentials.html">Essentials</a></li>
-          <li><a href="../clothing/clothing-men.html">Men</a></li>
-          <li><a href="../clothing/clothing-women.html">Women</a></li>
-          <li><a href="../clothing/clothing-kids.html">Kids</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="../coming-soon.html">Transportation <span class="upcoming">(Upcoming)</span></a>
-      </li>
-      <li>
-        <a href="../coming-soon.html">Foundation <span class="upcoming">(Upcoming)</span></a>
-      </li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Banner -->
-  <section class="hero">
-    <h2>Our Clothing Collection</h2>
-    <p>Fashion with purpose — Essentials, Men, Women & Kids</p>
-  </section>
-
-  <!-- Category Buttons -->
-  <section class="section">
-    <img src="../images/greate.png" alt="Light Within the Globe Clothing" />
-    <img src="../images/banner.jpg" alt="Light Within the Globe Clothing" />
-    <div class="button-group">
-      <a href="../clothing/clothing-essentials.html" class="button">Essentials</a>
-      <a href="../clothing/clothing-men.html" class="button">Men</a>
-      <a href="../clothing/clothing-women.html" class="button">Women</a>
-      <a href="../clothing/clothing-kids.html" class="button">Kids</a>
-    </div>
-  </section>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/23272146015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="../images/whatsapp-icon.png" alt="Chat on WhatsApp">
-  </a>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  </footer>
-
-  <script>
+<!-- Header with Logo and Hamburger -->
+<header class="top-bar">
+<div class="hamburger" onclick="toggleMenu()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</header>
+<!-- Navigation -->
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About Us</a></li>
+<li>
+<a href="../clothing/clothing.html">Clothing ▼</a>
+<ul>
+<li><a href="../clothing/clothing-essentials.html">Essentials</a></li>
+<li><a href="../clothing/clothing-men.html">Men</a></li>
+<li><a href="../clothing/clothing-women.html">Women</a></li>
+<li><a href="../clothing/clothing-kids.html">Kids</a></li>
+</ul>
+</li>
+<li>
+<a href="../coming-soon.html">Transportation <span class="upcoming">(Upcoming)</span></a>
+</li>
+<li>
+<a href="../coming-soon.html">Foundation <span class="upcoming">(Upcoming)</span></a>
+</li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+</nav>
+<!-- Hero Banner -->
+<section class="hero">
+<h2>Our Clothing Collection</h2>
+<p>Fashion with purpose — Essentials, Men, Women &amp; Kids</p>
+</section>
+<!-- Category Buttons -->
+<section class="section">
+<img alt="Light Within the Globe Clothing" loading="lazy" src="../images/greate.png"/>
+<img alt="Light Within the Globe Clothing" loading="lazy" src="../images/banner.jpg"/>
+<div class="button-group">
+<a class="button" href="../clothing/clothing-essentials.html">Essentials</a>
+<a class="button" href="../clothing/clothing-men.html">Men</a>
+<a class="button" href="../clothing/clothing-women.html">Women</a>
+<a class="button" href="../clothing/clothing-kids.html">Kids</a>
+</div>
+</section>
+<!-- WhatsApp Floating Button -->
+<a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/23272146015" target="_blank">
+<img alt="Chat on WhatsApp" loading="lazy" src="../images/whatsapp-icon.png"/>
+</a>
+<!-- Footer -->
+<footer>
+<p>© 2025 Light Within the Globe | Creating Impact, Globally</p>
+</footer>
+<script>
     function toggleMenu() {
       const nav = document.querySelector("nav ul");
       nav.classList.toggle("active");
     }
   </script>
-
 </body>
 </html>

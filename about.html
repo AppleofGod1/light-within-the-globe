@@ -1,42 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Light Within the Globe</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Learn the story, vision, and mission of Light Within the Globe — inspiring global change through fashion, transportation, and child-focused foundation work." />
-  <meta name="keywords" content="About Light Within the Globe, fashion brand in Africa, child support foundation, transport services Sierra Leone, LWG vision, charity story, nonprofit clothing, African social enterprise" />
-  <meta name="author" content="Light Within the Globe" />
-
-  <!-- Open Graph Tags (for Facebook, WhatsApp, LinkedIn) -->
-  <meta property="og:title" content="About Us | Light Within the Globe" />
-  <meta property="og:description" content="Discover our story, vision, and mission — transforming lives through fashion, transport, and support for children." />
-  <meta property="og:image" content="https://lightwithintheglobe.com/images/og-cover.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://lightwithintheglobe.com/about.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Light Within the Globe" />
-  <meta property="og:locale" content="en_US" />
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Us | Light Within the Globe" />
-  <meta name="twitter:description" content="From humble beginnings to global impact — discover our purpose and mission." />
-  <meta name="twitter:image" content="https://lightwithintheglobe.com/images/og-cover.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-</head>
-
-
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Light Within the Globe</title>
+<!-- SEO Meta Tags -->
+<meta content="Learn the story, vision, and mission of Light Within the Globe — inspiring global change through fashion, transportation, and child-focused foundation work." name="description"/>
+<meta content="About Light Within the Globe, fashion brand in Africa, child support foundation, transport services Sierra Leone, LWG vision, charity story, nonprofit clothing, African social enterprise" name="keywords"/>
+<meta content="Light Within the Globe" name="author"/>
+<!-- Open Graph Tags (for Facebook, WhatsApp, LinkedIn) -->
+<meta content="About Us | Light Within the Globe" property="og:title"/>
+<meta content="Discover our story, vision, and mission — transforming lives through fashion, transport, and support for children." property="og:description"/>
+<meta content="https://lightwithintheglobe.com/images/og-cover.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://lightwithintheglobe.com/about.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="Light Within the Globe" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- Twitter Card Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="About Us | Light Within the Globe" name="twitter:title"/>
+<meta content="From humble beginnings to global impact — discover our purpose and mission." name="twitter:description"/>
+<meta content="https://lightwithintheglobe.com/images/og-cover.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+<style>
+    @media (max-width: 768px) {
+      .hamburger {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 999;
+      }
+    }
+    </style></head>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -51,12 +53,10 @@
     ]
   }
   </script>
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Inline Styling -->
-  <style>
+<!-- Main Stylesheet -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Inline Styling -->
+<style>
     :root {
       --primary-color: #002F5F;
       --accent-color: #C5A24D;
@@ -248,71 +248,60 @@
       height: 50px;
     }
   </style>
-</head>
-
-
 
 <body>
-  <header class="top-bar">
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li>
-        <a href="clothing/clothing.html">Clothing ▼</a>
-        <ul>
-          <li><a href="clothing/clothing-essentials.html">Essentials</a></li>
-          <li><a href="clothing/clothing-men.html">Men</a></li>
-          <li><a href="clothing/clothing-women.html">Women</a></li>
-          <li><a href="clothing/clothing-kids.html">Kids</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="coming-soon.html">Transportation <span class="upcoming">(Upcoming)</span></a>
-      </li>
-      <li>
-        <a href="coming-soon.html">Foundation <span class="upcoming">(Upcoming)</span></a>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="welcome">
-    <h2>Welcome to Light Within the Globe</h2>
-    <p>About Us – Our Story • Vision • Mission</p>
-  </section>
-
-  <section class="section">
-    <img src="images/home.png" alt="Our Story Image" />
-    <h3>Our Story</h3>
-    <p>Light Within the Globe was born from a simple but powerful inspiration — an experience that began in our own community.</p>
-    <p>We saw that many young children around us faced great challenges. Their families could not afford the basic school materials needed to attend and succeed in school.</p>
-    <p>Wanting to make a difference, we started stepping in where we could — providing school supplies, clothing, and sometimes small amounts of financial support to help them along the way.</p>
-    <p>From this experience, the vision for Light Within the Globe began to take shape...</p>
-    <p>We started with our clothing business... Our mission is simple: <strong>Creating Impact, Globally</strong>.</p>
-  </section>
-
-  <section class="section">
-    <h3>Our Vision</h3>
-    <p>To become a global brand that empowers lives through fashion, transportation, and community impact — lighting the globe with hope and opportunity.</p>
-
-    <h3>Our Mission</h3>
-    <p>We create beautiful fashion and offer transport services that inspire dignity and mobility. Through every effort, we support education, healthcare, and opportunities for less privileged children.</p>
-  </section>
-
-
-  <footer>
-    <p>&copy; 2025 Light Within the Globe | Creating Impact, Globally</p>
-  </footer>
-
-  <script>
+<header class="top-bar">
+<div class="hamburger" onclick="toggleMenu()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li>
+<a href="clothing/clothing.html">Clothing ▼</a>
+<ul>
+<li><a href="clothing/clothing-essentials.html">Essentials</a></li>
+<li><a href="clothing/clothing-men.html">Men</a></li>
+<li><a href="clothing/clothing-women.html">Women</a></li>
+<li><a href="clothing/clothing-kids.html">Kids</a></li>
+</ul>
+</li>
+<li>
+<a href="coming-soon.html">Transportation <span class="upcoming">(Upcoming)</span></a>
+</li>
+<li>
+<a href="coming-soon.html">Foundation <span class="upcoming">(Upcoming)</span></a>
+</li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<section class="welcome">
+<h2>Welcome to Light Within the Globe</h2>
+<p>About Us – Our Story • Vision • Mission</p>
+</section>
+<section class="section">
+<img alt="Our Story Image" loading="lazy" src="images/home.png"/>
+<h3>Our Story</h3>
+<p>Light Within the Globe was born from a simple but powerful inspiration — an experience that began in our own community.</p>
+<p>We saw that many young children around us faced great challenges. Their families could not afford the basic school materials needed to attend and succeed in school.</p>
+<p>Wanting to make a difference, we started stepping in where we could — providing school supplies, clothing, and sometimes small amounts of financial support to help them along the way.</p>
+<p>From this experience, the vision for Light Within the Globe began to take shape...</p>
+<p>We started with our clothing business... Our mission is simple: <strong>Creating Impact, Globally</strong>.</p>
+</section>
+<section class="section">
+<h3>Our Vision</h3>
+<p>To become a global brand that empowers lives through fashion, transportation, and community impact — lighting the globe with hope and opportunity.</p>
+<h3>Our Mission</h3>
+<p>We create beautiful fashion and offer transport services that inspire dignity and mobility. Through every effort, we support education, healthcare, and opportunities for less privileged children.</p>
+</section>
+<footer>
+<p>© 2025 Light Within the Globe | Creating Impact, Globally</p>
+</footer>
+<script>
     function toggleMenu() {
       const nav = document.querySelector("nav ul");
       nav.classList.toggle("active");
